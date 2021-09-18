@@ -9063,7 +9063,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text == "نسبه الحب" and ChCheck(msg) or text == "نسبة الحب" and ChCheck(msg) then
 DevAbs:set(SNAP..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽قم بارسل اسمين لحساب نسبة الحب بينهما كمثال ↫ جاك وروز', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽قم بارسل اسمين لحساب نسبة الحب بينهما كمثال ↫ توفي ودنو', 1, 'md')
 end
 end
 if text and text ~= "نسبه الحب" and text ~= "نسبة الحب" and DevAbs:get(SNAP..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
@@ -9080,7 +9080,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text == "نسبه الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) then
 DevAbs:set(SNAP..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽قم بارسل اسمين لحساب نسبة الكره بينهما كمثال ↫ جاك وروز', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽قم بارسل اسمين لحساب نسبة الكره بينهما كمثال ↫ توفي ودنو', 1, 'md')
 end
 end
 if text and text ~= "نسبه الكره" and text ~= "نسبة الكره" and DevAbs:get(SNAP..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
