@@ -4447,11 +4447,16 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽حسنا قم باعادة توجيه �
 end
 --     Source SNAP     --
 if text == "السورس" or text == "سورس" then 
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ѕɴᴀᴘ\n\n[-  ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ  .](http://t.me/iinzzz)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/BBI9B)\n\n[-  ѕɴᴀᴘ ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/yk_yy)\n\n[-  ʙᴏᴛ ѕɴᴀᴘ .](http://t.me/saett43bot)"
+local text =  [[
+ "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ѕɴᴀᴘ\n\n[-  ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ  .](http://t.me/iinzzz)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/BBI9B)\n\n[-  ѕɴᴀᴘ ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/yk_yy)\n\n[-  ʙᴏᴛ ѕɴᴀᴘ .](http://t.me/saett43bot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '✫: ѕɴᴀᴘ sᴏᴜʀᴄʀ .',url="t.me/iinzzz/18198"}},
 }
+]]
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
 --     Source SNAP     --
