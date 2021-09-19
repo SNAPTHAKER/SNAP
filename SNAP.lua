@@ -1276,17 +1276,17 @@ local Help = DevAbs:get(SNAP..'Abs:Help')
 local Text = [[
 ⊀╽اهلا بك في قائمة الاوامر↞↡ 
 ━─━─━─ ₪ ─━─━─━
-⊀╽م1↞اوامر الحمايه
-⊀╽م2↞اوامر الادمنيه
-⊀╽م3↞اوامر المدراء
-⊀╽م4↞اوامر المنشئين
-⊀╽م5↞اوامر المطورين
-⊀╽م6↞اوامر الاعضاء
+⊀╽م1↞• اوامر الحمايه •
+⊀╽م2↞• اوامر الادمنيه •
+⊀╽م3↞• اوامر المدراء •
+⊀╽م4↞• اوامر المنشئين •
+⊀╽م5↞• اوامر المطورين •
+⊀╽م6↞• اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1348,7 +1348,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1362,7 +1362,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help2')
 local Text = [[
-⊀╽اوامر الادمنيه↞↡
+⊀╽• اوامر الادمنيه •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽الاعدادت
 ⊀╽تاك للكل 
@@ -1418,7 +1418,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1432,7 +1432,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help3')
 local Text = [[
-⊀╽اوامر المدراء↞↡
+⊀╽• اوامر المدراء •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽فحص البوت
 ⊀╽ضع اسم + الاسم
@@ -1477,7 +1477,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1491,7 +1491,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help4')
 local Text = [[
-⊀╽اوامر المنشئين↞↡
+⊀╽• اوامر المنشئين •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽تنزيل الكل
 ⊀╽الميديا • امسح
@@ -1510,7 +1510,7 @@ local Text = [[
 ⊀╽نزلني • امسح
 ⊀╽الحظر • الكتم
 ━─━─━─ ₪ ─━─━─━
-⊀╽اوامر المنشئين الاساسيين↞↡
+⊀╽• اوامر المنشئين • الاساسيين↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽وضع لقب + اللقب
 ⊀╽تفعيل • تعطيل↞الرفع
@@ -1530,7 +1530,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1544,7 +1544,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help5')
 local Text = [[
-⊀╽اوامر المطورين↞↡
+⊀╽• اوامر المطورين •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽الكروبات
 ⊀╽المطورين
@@ -1610,7 +1610,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1621,7 +1621,7 @@ local Abbs = DataText:match('/HelpList6:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 local Help = DevAbs:get(SNAP..'Abs:Help6')
 local Text = [[
-⊀╽اوامر الاعضاء↞↡
+⊀╽• اوامر الاعضاء •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽السورس • موقعي • رتبتي • معلوماتي 
 ⊀╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
@@ -1652,7 +1652,7 @@ local Text = [[
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -10318,17 +10318,17 @@ local Help = DevAbs:get(SNAP..'Abs:Help')
 local Text = [[
 ⊀╽اهلا بك في قائمة الاوامر↞↡ 
 ━─━─━─ ₪ ─━─━─━
-⊀╽م1↞اوامر الحمايه
-⊀╽م2↞اوامر الادمنيه
-⊀╽م3↞اوامر المدراء
-⊀╽م4↞اوامر المنشئين
-⊀╽م5↞اوامر المطورين
-⊀╽م6↞اوامر الاعضاء
+⊀╽م1↞• اوامر الحمايه •
+⊀╽م2↞• اوامر الادمنيه •
+⊀╽م3↞• اوامر المدراء •
+⊀╽م4↞• اوامر المنشئين •
+⊀╽م5↞• اوامر المطورين •
+⊀╽م6↞• اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
 ⊀╽[Source Channel](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..msg.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..msg.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..msg.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Help or Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -10347,7 +10347,7 @@ return false end
 end
 if text == "م1" or text == "م١" or text == "اوامر1" or text == "اوامر١" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help1')
 local Text = [[
@@ -10415,11 +10415,11 @@ return false end
 end
 if text == "م2" or text == "م٢" or text == "اوامر2" or text == "اوامر٢" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help2')
 local Text = [[
-⊀╽اوامر الادمنيه↞↡
+⊀╽• اوامر الادمنيه ↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽الاعدادت
 ⊀╽تاك للكل 
@@ -10491,11 +10491,11 @@ return false end
 end
 if text == "م3" or text == "م٣" or text == "اوامر3" or text == "اوامر٣" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help3')
 local Text = [[
-⊀╽اوامر المدراء↞↡
+⊀╽• اوامر المدراء •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽فحص البوت
 ⊀╽ضع اسم + الاسم
@@ -10556,11 +10556,11 @@ return false end
 end
 if text == "م٤" or text == "م4" or text == "اوامر4" or text == "اوامر٤" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر يخص الرتب الاعلى فقط\n⊀╽ارسل↞(م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help4')
 local Text = [[
-⊀╽اوامر المنشئين↞↡
+⊀╽• اوامر المنشئين •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽تنزيل الكل
 ⊀╽الميديا • امسح
@@ -10579,7 +10579,7 @@ local Text = [[
 ⊀╽نزلني • امسح
 ⊀╽الحظر • الكتم
 ━─━─━─ ₪ ─━─━─━
-⊀╽اوامر المنشئين الاساسيين↞↡
+⊀╽• اوامر المنشئين • الاساسيين↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽وضع لقب + اللقب
 ⊀╽تفعيل • تعطيل↞الرفع
@@ -10619,7 +10619,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⊀╽هذا الامر للمطورين فق
 else
 local Help = DevAbs:get(SNAP..'Abs:Help5')
 local Text = [[
-⊀╽اوامر المطورين↞↡
+⊀╽• اوامر المطورين •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽الكروبات
 ⊀╽المطورين
@@ -10702,7 +10702,7 @@ end
 if text == "م٦" or text == "م6" or text == "اوامر6" or text == "اوامر٦" then
 local Help = DevAbs:get(SNAP..'Abs:Help6')
 local Text = [[
-⊀╽اوامر الاعضاء↞↡
+⊀╽• اوامر الاعضاء •↞↡
 ━─━─━─ ₪ ─━─━─━
 ⊀╽السورس • موقعي • رتبتي • معلوماتي 
 ⊀╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
