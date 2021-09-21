@@ -4450,7 +4450,7 @@ if text == "السورس" or text == "سورس" then
 local text =  [[ = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ʀᴀᴠᴇɴ\n\n[✫  ʀᴀᴠᴇɴ ᴄʜᴀɴɴᴇʟ](http://t.me/XXXZZ)\n\n[✫  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/RaVeNFiles)\n\n[✫  ʀᴀᴠᴇɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/EEEEEl)\n\n[✫  ʙᴏᴛ ʀᴀᴠᴇɴ](http://t.me/mw_mBOT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ sᴏᴜʀᴄʀ ʀᴀᴠᴇɴ',url="t.me/XXXZZ/26"}},
+{{ = '✫ sᴏᴜʀᴄʀ ʀᴀᴠᴇɴ',url="t.me/XXXZZ/26"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XXXZZ&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
