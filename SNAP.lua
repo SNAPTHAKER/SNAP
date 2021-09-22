@@ -4449,16 +4449,17 @@ end
 if text == "السورس" or text == "سورس" then 
 local text =  [[
 Welcome To Source
-𓄇[˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.](https://t.me/iinzzz)
+⸙╽SNAP TEAM
+━─━─━─ ₪ ─━─━─━
+⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+
+⸙╽[• ᴇxᴘ sᴏᴜʀᴄᴇ 🕷](https://t.me/BBI9B)
+
+⸙╽[• ᴅᴇᴠᴇ sɴᴀᴘ 🦅](https://t.me/yk_uu)
+━─━─━─ ₪ ─━─━─━
+⸙╽[Tws SNAP](https://t.me/Y22fbot)
 ]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '⌔ Source Channel',url="https://t.me/iinzzz"}},
-{{text = '⌔ Developer',url="t.me/yk_uu"},{text = '⌔ Tws LaricA',url="https://t.me/sSs_BoT"}},{{text= '⌔ Support Source .',url="https://t.me/joinchat/iinzzz"}}
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false
+Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
