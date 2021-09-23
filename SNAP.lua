@@ -4449,12 +4449,12 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-𓄇[˛ snap 𝗍𝖾𝖺𝗆 🦇.](https://t.me/iinzzz)
+[˛ snap 𝗍𝖾𝖺𝗆 🕷.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌔ Source Channel',url="https://t.me/iinzzz"}},
-{{text = '⌔ Developer',url="t.me/YK_uu"},{text = '⌔ Tws snap',url="https://t.me/Y22fbot"}},{{text= '⌔ Support Source .',url="https://t.me/xssuuu"}}
+{{text = '• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •',url="https://t.me/iinzzz"}},
+{{text = '• ᴅᴇᴠᴇ sɴᴀᴘ 🦅',url="t.me/YK_uu"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
