@@ -4453,7 +4453,7 @@ Welcome To Source
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌔ Source Channel',url="https://t.me/inzzz"}},
+{{text = '⌔ Source Channel',url="https://t.me/iinzzz"}},
 {{text = '⌔ Developer',url="t.me/YK_uu"},{text = '⌔ Tws snap',url="https://t.me/Y22fbot"}},{{text= '⌔ Support Source .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
