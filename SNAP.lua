@@ -4446,20 +4446,19 @@ DevAbs:set(SNAP..'Abs:viewget'..msg.sender_user_id_,true)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source SNAP     --
-if text == "السورس" or text == "سورس" then 
-local text =  [[
+if text == "السورس" or text == "سورس" then
+Text = [[
 Welcome To Source
-⸙╽SNAP TEAM
-━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
-
-⸙╽[• ᴇxᴘ sᴏᴜʀᴄᴇ 🕷](https://t.me/BBI9B)
-
-⸙╽[• ᴅᴇᴠᴇ sɴᴀᴘ 🦅](https://t.me/yk_uu)
-━─━─━─ ₪ ─━─━─━
-⸙╽[Tws SNAP](https://t.me/Y22fbot)
+𓄇[˛ snap 𝗍𝖾𝖺𝗆 🦇.](https://t.me/iinzzz)
 ]]
-Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '⌔ Source Channel',url="https://t.me/inzzz"}},
+{{text = '⌔ Developer',url="t.me/YK_uu"},{text = '⌔ Tws snap',url="https://t.me/Y22fbot"}},{{text= '⌔ Support Source .',url="https://t.me/xssuuu"}}
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
