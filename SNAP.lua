@@ -1009,9 +1009,9 @@ if DevAbs:sismember(SNAP..'Abs:Tkeed:'..Chat_Id2, data.sender_user_id_) then
 HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?chat_id="..Chat_Id2.."&user_id="..data.sender_user_id_.."&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 DevAbs:srem(SNAP..'Abs:Tkeed:'..Chat_Id2, data.sender_user_id_)
 DeleteMessage(Chat_Id2,{[0] = MsgId2})
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ تم الغاء تقيدك من المجموعه بنجاح .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ تم الغاء تقيدك من المجموعه بنجاح .")..'&show_alert=true')
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا هذا الامر لكشف الروبوت وليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا هذا الامر لكشف الروبوت وليس لك .")..'&show_alert=true')
 end 
 end
 if DataText and DataText:match(tonumber(data.sender_user_id_)..':SetMem:(.*)') then
@@ -1266,7 +1266,7 @@ local Abbs = DataText:match('/HideHelpList:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 EditMsg(Chat_Id2, Msg_Id2, "⸙╽تم اخفاء كليشة الاوامر") 
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList:(.*)') then
@@ -1289,14 +1289,14 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList1:(.*)') then
 local Abbs = DataText:match('/HelpList1:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevAbs:get(SNAP..'Abs:Help1')
 local Text = [[
@@ -1351,14 +1351,14 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList2:(.*)') then
 local Abbs = DataText:match('/HelpList2:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevAbs:get(SNAP..'Abs:Help2')
 local Text = [[
@@ -1421,14 +1421,14 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList3:(.*)') then
 local Abbs = DataText:match('/HelpList3:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevAbs:get(SNAP..'Abs:Help3')
 local Text = [[
@@ -1480,14 +1480,14 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList4:(.*)') then
 local Abbs = DataText:match('/HelpList4:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevAbs:get(SNAP..'Abs:Help4')
 local Text = [[
@@ -1533,14 +1533,14 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList5:(.*)') then
 local Abbs = DataText:match('/HelpList5:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 if not Admin(data) then
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا ليس لديك صلاحية التحكم لهذا الامر .")..'&show_alert=true')
 end
 local Help = DevAbs:get(SNAP..'Abs:Help5')
 local Text = [[
@@ -1613,7 +1613,7 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 if DataText and DataText:match('/HelpList6:(.*)') then
@@ -1655,7 +1655,7 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
-return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
+return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⸙ عذرا الامر ليس لك .")..'&show_alert=true')
 end
 end
 end
@@ -1960,24 +1960,24 @@ if text == '/start' or text == 'رجوع ،🔙‘' then
 if SecondSudo(msg) then 
 local Sudo_Welcome = '⸙╽مرحبا عزيزي المطور \n⸙╽انت المطور الاساسي هنا \n⸙╽اليك ازرار سورس سناب \n⸙╽تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'وضع اسم البوت','↫ تحديث ⌁','وضع كليشه المطور'},
-{'↫ المطورين ⌁','↫ الاحصائيات ⌁'},
-{'↫ المجموعات ⌁','روابط الكروبات','↫ المشتركين ⌁'},
-{'↫ تعطيل التواصل ⌁','↫ تفعيل التواصل ⌁'},
-{'تنظيف الكروبات','↫ قائمه العام ⌁','تنظيف المشتركين'},
-{'↫ تغير المطور الاساسي ⌁'},
+{'وضع اسم البوت','↫ تحديث ⸙','وضع كليشه المطور'},
+{'↫ المطورين ⸙','↫ الاحصائيات ⸙'},
+{'↫ المجموعات ⸙','روابط الكروبات','↫ المشتركين ⸙'},
+{'↫ تعطيل التواصل ⸙','↫ تفعيل التواصل ⸙'},
+{'تنظيف الكروبات','↫ قائمه العام ⸙','تنظيف المشتركين'},
+{'↫ تغير المطور الاساسي ⸙'},
 {'تعطيل ترحيب البوت','تفعيل ترحيب البوت'},
-{'↫ تغير معلومات الترحيب ⌁'},
-{'↫ تعطيل المغادره ⌁','↫ تفعيل المغادره ⌁'},
-{'↫ تعطيل الاذاعه ⌁','↫ تفعيل الاذاعه ⌁'},
-{'↫ اذاعه بالتثبيت ⌁'},
-{'↫ اذاعه عام ⌁','↫ اذاعه خاص ⌁'},
-{'↫ اذاعه عام بالتوجيه ⌁','↫ اذاعه خاص بالتوجيه ⌁'},
+{'↫ تغير معلومات الترحيب ⸙'},
+{'↫ تعطيل المغادره ⸙','↫ تفعيل المغادره ⸙'},
+{'↫ تعطيل الاذاعه ⸙','↫ تفعيل الاذاعه ⸙'},
+{'↫ اذاعه بالتثبيت ⸙'},
+{'↫ اذاعه عام ⸙','↫ اذاعه خاص ⸙'},
+{'↫ اذاعه عام بالتوجيه ⸙','↫ اذاعه خاص بالتوجيه ⸙'},
 {'~ تعيين كلايش الاوامر ~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
 {'جلب نسخه السورس','تحديث السورس','جلب نسخه الكروبات'},
-{'↫ حذف رد عام ⌁','↫ الردود العام ⌁','↫ اضف رد عام ⌁'},
-{'↫ حذف رد الخاص ⌁','↫ تعيين رد الخاص ⌁'},
+{'↫ حذف رد عام ⸙','↫ الردود العام ⸙','↫ اضف رد عام ⸙'},
+{'↫ حذف رد الخاص ⸙','↫ تعيين رد الخاص ⸙'},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
 {'حذف كليشه الاشتراك','كليشه الاشتراك','تغير كليشه الاشتراك'},
 }
@@ -2001,7 +2001,7 @@ end end
 if text == '/start' and ChCheck(msg) then  
 if not DevAbs:get(SNAP..'Abs:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=SNAP},function(arg,dp) 
-local inline = {{{text="⌁ اضفني في مجموعتك ⌁",url="t.me/"..dp.username_.."?startgroup=botstart"}}}
+local inline = {{{text="⸙ اضفني في مجموعتك ⸙",url="t.me/"..dp.username_.."?startgroup=botstart"}}}
 local start = DevAbs:get(SNAP.."Abs:Start:Bot")
 if start then 
 Start_Source = start
@@ -2085,12 +2085,12 @@ DevAbs:del(SNAP..'Abs:Start:Bots'..msg.sender_user_id_)
 return false
 end
 if SecondSudo(msg) then
-if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == '↫ تعيين رد الخاص ⌁' then 
+if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == '↫ تعيين رد الخاص ⸙' then 
 DevAbs:set(SNAP..'Abs:Start:Bots'..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي كليشة الستارت الان', 1, 'md')
 return false
 end
-if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == '↫ حذف رد الخاص ⌁' then 
+if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == '↫ حذف رد الخاص ⸙' then 
 DevAbs:del(SNAP..'Start:Bot') 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم حذف كليشة الستارت بنجاح', 1, 'md')
 end
@@ -2104,12 +2104,12 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
-if text == 'تفعيل التواصل' or text == '↫ تفعيل التواصل ⌁' then   
+if text == 'تفعيل التواصل' or text == '↫ تفعيل التواصل ⸙' then   
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تفعيل التواصل بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP..'Abs:Texting:Pv') 
 end
-if text == 'تعطيل التواصل' or text == '↫ تعطيل التواصل ⌁' then  
+if text == 'تعطيل التواصل' or text == '↫ تعطيل التواصل ⸙' then  
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تعطيل التواصل بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP..'Abs:Texting:Pv',true) 
@@ -4454,7 +4454,7 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •',url="https://t.me/iinzzz"}},
-{{text = '• ᴅᴇᴠᴇ sɴᴀᴘ 🦅',url="t.me/YK_uu"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
+{{text = '• ᴅᴇᴠᴇ sɴᴀᴘ 🦅',url="t.me/YK_YY"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4634,7 +4634,7 @@ end
 if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
 Text = "• *The • ᴅᴇᴠᴇ sɴᴀᴘ 🦅 and programmer of this source is* : [𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi](https://t.me/yk_uu)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- 𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi •',url="t.me/yk_uu"}}}
+keyboard.inline_keyboard = {{{text='- 𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi •',url="t.me/YK_YY"}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/yk_uu&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
@@ -6440,7 +6440,7 @@ end
 end
 end
 --     Source SNAP     --
-if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ⌁") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
+if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ⸙") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 send(msg.chat_id_, msg.id_,'⸙╽يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
 DevAbs:setex(SNAP.."Abs:EditDev"..msg.sender_user_id_,300,true)
 end
@@ -6846,7 +6846,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source SNAP     --
 if SudoBot(msg) then
-if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "↫ قائمه العام ⌁" and ChCheck(msg) then 
+if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "↫ قائمه العام ⸙" and ChCheck(msg) then 
 local BanAll = DevAbs:smembers(SNAP..'Abs:BanAll:')
 local MuteAll = DevAbs:smembers(SNAP..'Abs:MuteAll:')
 if #BanAll ~= 0 then 
@@ -6881,7 +6881,7 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source SNAP     --
-if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ⌁" and ChCheck(msg) then 
+if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ⸙" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:SudoBot:')
 text = "⸙╽قائمة المطورين↞↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
@@ -7848,15 +7848,15 @@ return false
 end
 --     Source SNAP     --
 if SudoBot(msg) then
-if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "↫ الاحصائيات ⌁" then
+if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "↫ الاحصائيات ⸙" then
 local gps = DevAbs:scard(SNAP.."Abs:Groups") local users = DevAbs:scard(SNAP.."Abs:Users") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽احصائيات البوت↞↡\n⸙╽عدد المشتركين↞❨ '..users..' ❩\n⸙╽عدد المجموعات↞❨ '..gps..' ❩', 1, 'md')
 end
-if text and text == "المشتركين" and ChCheck(msg) or text and text == "↫ المشتركين ⌁" then
+if text and text == "المشتركين" and ChCheck(msg) or text and text == "↫ المشتركين ⸙" then
 local users = DevAbs:scard(SNAP.."Abs:Users")
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عدد المشتركين↞❨ '..users..' ❩', 1, 'md')
 end
-if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ⌁" then
+if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ⸙" then
 local gps = DevAbs:scard(SNAP.."Abs:Groups")
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عدد المجموعات↞❨ '..gps..' ❩', 1, 'md')
 end
@@ -9297,22 +9297,22 @@ DevAbs:set(SNAP..'Abs:Lock:AllRed'..msg.chat_id_,true)
 end
 --     Source SNAP     --
 if SecondSudo(msg) then
-if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ⌁' then 
+if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ⸙' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تفعيل المغادره بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP.."Abs:Left:Bot"..SNAP)
 end
-if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ⌁' then 
+if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ⸙' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تعطيل المغادره بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP.."Abs:Left:Bot"..SNAP,true) 
 end 
-if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ⌁' then 
+if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ⸙' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تفعيل الاذاعه بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP.."Abs:Send:Bot"..SNAP)
 end
-if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ⌁' then 
+if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ⸙' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي↞'..AbsRank(msg)..' \n⸙╽تم تعطيل الاذاعه بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP.."Abs:Send:Bot"..SNAP,true) 
@@ -9764,7 +9764,7 @@ end
 end
 end
 --     Source SNAP     --
-if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص ⸙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9831,7 +9831,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة "..AbsText.." بنجا�
 DevAbs:del(SNAP.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام ⸙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9898,7 +9898,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة "..AbsText.." بنجا�
 DevAbs:del(SNAP.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام بالتوجيه ⸙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9922,7 +9922,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة رسالتك بالتو
 DevAbs:del(SNAP.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص بالتوجيه ⸙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9946,7 +9946,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة رسالتك بالتو
 DevAbs:del(SNAP.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه بالتثبيت ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه بالتثبيت ⸙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -10119,7 +10119,7 @@ DevAbs:set(SNAP..'DelManagerRep'..msg.chat_id_,text)
 return false
 end end
 --     Source SNAP     --
-if text == 'حذف رد عام' and SecondSudo(msg) or text == '↫ حذف رد عام ⌁' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
+if text == 'حذف رد عام' and SecondSudo(msg) or text == '↫ حذف رد عام ⸙' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
 local List = DevAbs:smembers(SNAP.."Abs:Sudo:AllRed")
 if #List == 0 then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽لا توجد ردود مضافه" ,  1, "md")
@@ -10129,7 +10129,7 @@ DevAbs:set(SNAP.."Abs:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽حسنا ارسل الكلمه لحذفها " ,  1, "md")
 return false
 end
-if text == 'اضف رد عام' and SecondSudo(msg) or text == '↫ اضف رد عام ⌁' and SecondSudo(msg) then
+if text == 'اضف رد عام' and SecondSudo(msg) or text == '↫ اضف رد عام ⸙' and SecondSudo(msg) then
 DevAbs:set(SNAP.."Abs:Add:AllRed"..msg.sender_user_id_,'SetAllRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽حسنا ارسل الكلمه الان " ,  1, "md")
 return false
@@ -10224,7 +10224,7 @@ return false
 end
 end
 --     Source SNAP     --
-if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ⌁" and SecondSudo(msg) then
+if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ⸙" and SecondSudo(msg) then
 local redod = DevAbs:smembers(SNAP.."Abs:Sudo:AllRed")
 MsgRep = '⸙╽ردود المطور↞↡ \n━─━─━─ ₪ ─━─━─━\n'
 for k,v in pairs(redod) do
@@ -10744,7 +10744,7 @@ io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
-if text == 'تحديث' or text == 'تحديث البوت' or text == '↫ تحديث ⌁' then  
+if text == 'تحديث' or text == 'تحديث البوت' or text == '↫ تحديث ⸙' then  
 dofile('SNAP.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n        ( تم تحديث ملفات البوت )        \n\27[0;34;49m\n") 
@@ -10840,7 +10840,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم تعطيل الترحيب عند �
 DevAbs:set(SNAP..'Abs:Lock:BotWelcome',true)
 return false
 end 
-if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '↫ تغير معلومات الترحيب ⌁') and SecondSudo(msg) then    
+if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '↫ تغير معلومات الترحيب ⸙') and SecondSudo(msg) then    
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي نص الترحيب', 1, 'md') 
 DevAbs:del(SNAP..'Abs:Text:BotWelcome')
 DevAbs:del(SNAP..'Abs:Photo:BotWelcome')
