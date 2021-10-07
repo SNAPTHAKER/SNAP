@@ -1,6 +1,6 @@
 ------------------------------------------------
 -- This Source Was Developed By (ABS) @RFRFF.--
---   This Is The Source Channel @iinzzz .   --
+--   This Is The sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇. @iinzzz .   --
 --                 - SNAP -                 --
 --         -- https://t.me/iinzzz --         --
 ------------------------------------------------ 
@@ -22,7 +22,7 @@ UpTime  = io.popen([[uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if (
 --     Source SNAP     --
 local AutoSet = function() 
 if not DevAbs:get(Server.."IdSNAP") then 
-io.write('\27[1;35m\nالان ارسل ايدي المطور الاساسي -› ⤈\n\27[0;33;49m') 
+io.write('\27[1;35m\nالان ارسل ايدي المطور الاساسي -› ↡\n\27[0;33;49m') 
 local DevId = io.read():gsub(' ','') 
 if tostring(DevId):match('%d+') then 
 io.write('\27[1;36mتم حفظ ايدي المطور الاساسي\n27[0;39;49m') 
@@ -33,7 +33,7 @@ end
 os.execute('lua SNAP.lua') 
 end 
 if not DevAbs:get(Server.."TokenSNAP") then 
-io.write('\27[1;35m\nالان قم بارسال توكن البوت -› ⤈\n\27[0;33;49m') 
+io.write('\27[1;35m\nالان قم بارسال توكن البوت -› ↡\n\27[0;33;49m') 
 local TokenBot = io.read() 
 if TokenBot ~= '' then 
 local url , res = https.request('https://api.telegram.org/bot'..TokenBot..'/getMe') 
@@ -120,7 +120,7 @@ end
 Load_SNAP() 
 print("\27[36m"..[[ 
 Source SNAP
-]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\27[m")
+]]..'\27[m'.."\n\27[35mServer Information ↬ ↡ \n━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
 SudoIds = {Config.SudoIds,218385683,1783964439}
@@ -128,7 +128,7 @@ SNAP = Config.SNAP
 TokenBot = Config.TokenBot
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
 --     Source SNAP     --
-FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\n"..'\27[m'
+FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ↡ \n━─━─━─ ₪ ─━─━─━ ≈ ┉ ≈ ┉\n"..'\27[m'
 FilesNumber = 0
 for v in io.popen('ls Files'):lines() do
 if v:match(".lua$") then
@@ -540,7 +540,7 @@ parse_mode = "Html"
 end
 end
 keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 local Abs = "https://api.telegram.org/bot" ..TokenBot.. '/sendMessage?chat_id=' .. chat_id
 if reply_to_message_id ~= 0 then
 Abs = Abs .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 
@@ -598,7 +598,7 @@ elseif markdown == "html" then
 url = url.."&parse_mode=HTML" 
 end 
 keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 url = url..'&reply_markup='..JSON.encode(keyboard)
 return GetApi(url) 
 end
@@ -631,7 +631,7 @@ end ,nil)
 end
 --     Source SNAP     --
 local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then SNAPTEAM  = "المطور" elseif SecondSudo(msg) then SNAPTEAM = "المطور" elseif SudoBot(msg) then SNAPTEAM = "المطور" elseif ManagerAll(msg) then SNAPTEAM = "المدير" elseif AdminAll(msg) then SNAPTEAM = "الادمن" elseif AbsConstructor(msg) then SNAPTEAM = "المالك" elseif BasicConstructor(msg) then SNAPTEAM = "المنشئ" elseif Constructor(msg) then SNAPTEAM = "المنشئ" elseif Manager(msg) then SNAPTEAM = "المدير" elseif Admin(msg) then SNAPTEAM = "الادمن" else SNAPTEAM = "العضو" end return SNAPTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1783964439) then SNAPTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(SNAP) then SNAPTEAM = 'البوت' elseif SudoId(user_id) then SNAPTEAM = 'المطور الاساسي' elseif DevAbs:sismember(SNAP..'Abs:SecondSudo:', user_id) then SNAPTEAM = 'المطور الثانوي' elseif DevAbs:sismember(SNAP..'Abs:SudoBot:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(SNAP..'Abs:ManagerAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(SNAP..'Abs:AdminAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(SNAP..'Abs:VipAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(SNAP..'Abs:AbsConstructor:'..chat_id, user_id) then SNAPTEAM = 'المالك' elseif DevAbs:sismember(SNAP..'Abs:BasicConstructor:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(SNAP..'Abs:Constructor:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(SNAP..'Abs:Managers:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(SNAP..'Abs:Admins:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(SNAP..'Abs:VipMem:'..chat_id, user_id) then  SNAPTEAM = DevAbs:get(SNAP.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(SNAP..'Abs:Cleaner:'..chat_id, user_id) then  SNAPTEAM = DevAbs:get(SNAP.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else SNAPTEAM = DevAbs:get(SNAP.."Abs:mem:Rd"..chat_id) or 'العضو' end return SNAPTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1783964439) then SNAPTEAM = 'مطور السورس' elseif tonumber(user_id) == tonumber(SNAP) then SNAPTEAM = 'البوت' elseif SudoId(user_id) then SNAPTEAM = 'المطور الاساسي' elseif DevAbs:sismember(SNAP..'Abs:SecondSudo:', user_id) then SNAPTEAM = 'المطور الثانوي' elseif DevAbs:sismember(SNAP..'Abs:SudoBot:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(SNAP..'Abs:ManagerAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(SNAP..'Abs:AdminAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(SNAP..'Abs:VipAll:', user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(SNAP..'Abs:AbsConstructor:'..chat_id, user_id) then SNAPTEAM = 'المالك' elseif DevAbs:sismember(SNAP..'Abs:BasicConstructor:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(SNAP..'Abs:Constructor:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(SNAP..'Abs:Managers:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(SNAP..'Abs:Admins:'..chat_id, user_id) then SNAPTEAM = DevAbs:get(SNAP.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(SNAP..'Abs:VipMem:'..chat_id, user_id) then  SNAPTEAM = DevAbs:get(SNAP.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(SNAP..'Abs:Cleaner:'..chat_id, user_id) then  SNAPTEAM = DevAbs:get(SNAP.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else SNAPTEAM = DevAbs:get(SNAP.."Abs:mem:Rd"..chat_id) or 'العضو' end return SNAPTEAM end
 --     Source SNAP     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -763,7 +763,7 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-send(msg.chat_id_,msg.id_,'⸙╽صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي -› ⤈\n━─━─━─ ₪ ─━─━─━\n⸙╽حذف الرسائل -› '..DEL..'\n⸙╽دعوة المستخدمين -› '..INV..'\n⸙╽حظر المستخدمين -› '..BAN..'\n⸙╽تثبيت الرسائل -› '..PIN..'\n⸙╽تغيير المعلومات -› '..EDT..'\n⸙╽اضافة مشرفين -› '..VIP..'\n━─━─━─ ₪ ─━─━─━')
+send(msg.chat_id_,msg.id_,'⸙╽صلاحيات '..GetCustomTitle(user_id,msg.chat_id_)..' هي -› ↡\n━─━─━─ ₪ ─━─━─━\n⸙╽حذف الرسائل -› '..DEL..'\n⸙╽دعوة المستخدمين -› '..INV..'\n⸙╽حظر المستخدمين -› '..BAN..'\n⸙╽تثبيت الرسائل -› '..PIN..'\n⸙╽تغيير المعلومات -› '..EDT..'\n⸙╽اضافة مشرفين -› '..VIP..'\n━─━─━─ ₪ ─━─━─━')
 end
 end
 end
@@ -927,7 +927,7 @@ DevAbs:srem(SNAP..'Abs:Admins:'..data.chat_id_,data.sender_user_id_)
 DevAbs:srem(SNAP..'Abs:VipMem:'..data.chat_id_,data.sender_user_id_)
 DevAbs:srem(SNAP..'Abs:Cleaner:'..data.chat_id_,data.sender_user_id_)
 DevAbs:srem(SNAP..'User:Donky:'..data.chat_id_,data.sender_user_id_)
-EditMsg(Chat_Id2, Msg_Id2, "⸙╽تم تنزيلك من -› ⤈\n~ ( "..constructor..Managers..admins..vipmem..cleaner..donky.." ) ~ \n") 
+EditMsg(Chat_Id2, Msg_Id2, "⸙╽تم تنزيلك من -› ↡\n~ ( "..constructor..Managers..admins..vipmem..cleaner..donky.." ) ~ \n") 
 else 
 if IdRank(data.sender_user_id_, data.chat_id_) == 'العضو' then
 EditMsg(Chat_Id2, Msg_Id2, "⸙╽ليس لديك رتبه في البوت") 
@@ -995,7 +995,7 @@ EditMsg(Chat_Id2, Msg_Id2, "⸙╽تم الغاء اللعبه لاعادة ال
 end
 if DataText == '/ListRolet' then
 local List = DevAbs:smembers(SNAP..'Abs:ListRolet'..data.chat_id_) 
-local Text = '⸙╽قائمة الاعبين -› ⤈\n━─━─━─ ₪ ─━─━─━\n' 
+local Text = '⸙╽قائمة الاعبين -› ↡\n━─━─━─ ₪ ─━─━─━\n' 
 local Textt = '━─━─━─ ₪ ─━─━─━\n⸙╽تم اكتمال العدد الكلي هل انت مستعد ؟'
 for k, v in pairs(List) do 
 Text = Text..k.."~ : [" ..v.."]\n"  
@@ -1182,24 +1182,24 @@ if dp.first_name_ == false then
 Dev_Abs(data.chat_id_, data.id_, 1, "⸙╽الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ⤈\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1211,24 +1211,24 @@ if dp.first_name_ == false then
 Dev_Abs(data.chat_id_, data.id_, 1, "⸙╽الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ⤈\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1274,19 +1274,19 @@ local Abbs = DataText:match('/HelpList:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 local Help = DevAbs:get(SNAP..'Abs:Help')
 local Text = [[
-⸙╽اهلا بك في قائمة الاوامر -› ⤈ 
+⸙╽اهلا بك في قائمة الاوامر -› ↡ 
 ━─━─━─ ₪ ─━─━─━
-⸙╽م1 -› اوامر الحمايه
-⸙╽م2 -› اوامر الادمنيه
-⸙╽م3 -› اوامر المدراء
-⸙╽م4 -› اوامر المنشئين
-⸙╽م5 -› اوامر المطورين
-⸙╽م6 -› اوامر الاعضاء
+⸙╽م1 -› • اوامر الحمايه •
+⸙╽م2 -› • اوامر الادمنيه •
+⸙╽م3 -› • اوامر المدراء •
+⸙╽م4 -› • اوامر المنشئين •
+⸙╽م5 -› • اوامر المطورين •
+⸙╽م6 -› • اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1300,7 +1300,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help1')
 local Text = [[
-⸙╽اوامر حماية المجموعه -› ⤈
+⸙╽اوامر حماية المجموعه -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽قفل • فتح -› الروابط
 ⸙╽قفل • فتح -› المعرفات
@@ -1335,9 +1335,9 @@ local Text = [[
 ⸙╽قفل • فتح -› الفارسيه
 ⸙╽قفل • فتح -› التفليش
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر حمايه اخرى -› ⤈
+⸙╽اوامر حمايه اخرى -› ↡
 ━─━─━─ ₪ ─━─━─━
-⸙╽قفل • فتح + الامر -› ⤈
+⸙╽قفل • فتح + الامر -› ↡
 ⸙╽التكرار بالطرد
 ⸙╽التكرار بالكتم
 ⸙╽التكرار بالتقيد
@@ -1345,10 +1345,10 @@ local Text = [[
 ⸙╽البوتات بالطرد
 ⸙╽البوتات بالتقيد
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1362,7 +1362,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help2')
 local Text = [[
-⸙╽اوامر الادمنيه -› ⤈
+⸙╽• اوامر الادمنيه • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽الاعدادت
 ⸙╽تاك للكل 
@@ -1415,10 +1415,10 @@ local Text = [[
 ⸙╽تقييد يوم + عدد الايام
 ⸙╽الغاء تقييد -› لالغاء التقييد بالوقت
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1432,7 +1432,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help3')
 local Text = [[
-⸙╽اوامر المدراء -› ⤈
+⸙╽• اوامر المدراء • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽فحص البوت
 ⸙╽ضع اسم + الاسم
@@ -1445,7 +1445,7 @@ local Text = [[
 ⸙╽حذف الردود المتعدده
 ⸙╽حذف قوائم المنع
 ⸙╽منع -› بالرد على ( ملصق • صوره • متحركه )
-⸙╽حذف قائمه منع + -› ⤈
+⸙╽حذف قائمه منع + -› ↡
 ( الصور • المتحركات • الملصقات )
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تنزيل الكل
@@ -1457,7 +1457,7 @@ local Text = [[
 ⸙╽اعاده التثبيت
 ⸙╽الغاء تثبيت الكل
 ━─━─━─ ₪ ─━─━─━
-⸙╽تغير رد + اسم الرتبه + النص -› ⤈
+⸙╽تغير رد + اسم الرتبه + النص -› ↡
 ⸙╽المطور • منشئ الاساسي
 ⸙╽المنشئ • المدير • الادمن
 ⸙╽المميز • المنظف • العضو
@@ -1467,17 +1467,17 @@ local Text = [[
 ⸙╽تعيين الايدي -› لتعيين الكليشه
 ⸙╽حذف الايدي -› لحذف الكليشه
 ━─━─━─ ₪ ─━─━─━
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽اطردني • الايدي بالصوره • الابراج
 ⸙╽معاني الاسماء • اوامر النسب • انطق
 ⸙╽الايدي • تحويل الصيغ • اوامر التحشيش
 ⸙╽ردود المدير • ردود المطور • التحقق
 ⸙╽ضافني • حساب العمر • الزخرفه • غنيلي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1491,7 +1491,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help4')
 local Text = [[
-⸙╽اوامر المنشئين -› ⤈
+⸙╽• اوامر المنشئين • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تنزيل الكل
 ⸙╽الميديا • امسح
@@ -1506,11 +1506,11 @@ local Text = [[
 ⸙╽المنظفين • حذف المنظفين
 ⸙╽رفع مدير • تنزيل مدير
 ⸙╽المدراء • حذف المدراء
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽نزلني • امسح
 ⸙╽الحظر • الكتم
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المنشئين الاساسيين -› ⤈
+⸙╽• اوامر المنشئين • الاساسيين -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽وضع لقب + اللقب
 ⸙╽تفعيل • تعطيل -› الرفع
@@ -1520,17 +1520,17 @@ local Text = [[
 ⸙╽رفع بكل الصلاحيات
 ⸙╽حذف القوائم
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المالكين -› ⤈
+⸙╽اوامر المالكين -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽رفع • تنزيل -› منشئ اساسي
 ⸙╽حذف المنشئين الاساسيين 
 ⸙╽المنشئين الاساسيين 
 ⸙╽حذف جميع الرتب
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1544,7 +1544,7 @@ return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackq
 end
 local Help = DevAbs:get(SNAP..'Abs:Help5')
 local Text = [[
-⸙╽اوامر المطورين -› ⤈
+⸙╽• اوامر المطورين • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽الكروبات
 ⸙╽المطورين
@@ -1564,7 +1564,7 @@ local Text = [[
 ⸙╽رفع • تنزيل -› مميز عام
 ⸙╽حذف • المميزين عام 
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المطور الاساسي -› ⤈
+⸙╽اوامر المطور الاساسي -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تحديث
 ⸙╽الملفات
@@ -1602,15 +1602,15 @@ local Text = [[
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تفعيل ملف + اسم الملف
 ⸙╽تعطيل ملف + اسم الملف
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽الاذاعه • الاشتراك الاجباري
 ⸙╽ترحيب البوت • المغادره
 ⸙╽البوت الخدمي • التواصل
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1621,7 +1621,7 @@ local Abbs = DataText:match('/HelpList6:(.*)')
 if tonumber(Abbs) == tonumber(data.sender_user_id_) then
 local Help = DevAbs:get(SNAP..'Abs:Help6')
 local Text = [[
-⸙╽اوامر الاعضاء -› ⤈
+⸙╽• اوامر الاعضاء • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽السورس • موقعي • رتبتي • معلوماتي 
 ⸙╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
@@ -1649,10 +1649,10 @@ local Text = [[
 ⸙╽تحويل + بالرد -› صوره • ملصق • صوت • بصمه
 ⸙╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
 return https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Help or Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 return https.request("https://api.telegram.org/bot"..TokenBot..'/answercallbackquery?callback_query_id='..data.id_..'&text='..URL.escape("⌁ عذرا الامر ليس لك .")..'&show_alert=true')
@@ -1702,7 +1702,7 @@ end
 if Constructor(msg) then
 if text == "الاوامر المضافه" and ChCheck(msg) then
 local List = DevAbs:smembers(SNAP.."List:Cmd:Group:New"..msg.chat_id_.."") 
-t = "⸙╽قائمة الاوامر المضافه -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+t = "⸙╽قائمة الاوامر المضافه -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 Cmds = DevAbs:get(SNAP.."Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -1743,7 +1743,7 @@ DevAbs:set(SNAP.."Set:Cmd:Group:New1"..msg.chat_id_..":تعط","تعطيل ال�
 DevAbs:sadd(SNAP.."List:Cmd:Group:New"..msg.chat_id_,"تعط")
 DevAbs:set(SNAP.."Set:Cmd:Group:New1"..msg.chat_id_..":تفع","تفعيل الايدي بالصوره")
 DevAbs:sadd(SNAP.."List:Cmd:Group:New"..msg.chat_id_,"تفع")
-send(msg.chat_id_, msg.id_,"⸙╽تم ترتيب الاوامر بالشكل التالي -› ⤈\n━─━─━─ ₪ ─━─━─━\n⸙╽ايدي -› ا\n⸙╽تنزيل الكل -› تك\n⸙╽رفع مميز -› م\n⸙╽رفع ادمن -› اد \n⸙╽رفع مدير -› مد \n⸙╽رفع منشئ -› من \n⸙╽رفع منشئ اساسي -› اس  \n⸙╽تفعيل الايدي بالصوره -› تفع\n⸙╽تعطيل الايدي بالصوره -› تعط\n━─━─━─ ₪ ─━─━─━")  
+send(msg.chat_id_, msg.id_,"⸙╽تم ترتيب الاوامر بالشكل التالي -› ↡\n━─━─━─ ₪ ─━─━─━\n⸙╽ايدي -› ا\n⸙╽تنزيل الكل -› تك\n⸙╽رفع مميز -› م\n⸙╽رفع ادمن -› اد \n⸙╽رفع مدير -› مد \n⸙╽رفع منشئ -› من \n⸙╽رفع منشئ اساسي -› اس  \n⸙╽تفعيل الايدي بالصوره -› تفع\n⸙╽تعطيل الايدي بالصوره -› تعط\n━─━─━─ ₪ ─━─━─━")  
 end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevAbs:set(SNAP.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
@@ -1763,7 +1763,7 @@ if #List == 0 then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽لاتوجد صلاحيات مضافه", 1, 'html')
 return false
 end
-t = "⸙╽قائمة الصلاحيات المضافه -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+t = "⸙╽قائمة الصلاحيات المضافه -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 var = DevAbs:get(SNAP.."Comd:New:rt:Abs:"..v..msg.chat_id_)
 if var then
@@ -1960,24 +1960,24 @@ if text == '/start' or text == 'رجوع ،🔙‘' then
 if SecondSudo(msg) then 
 local Sudo_Welcome = '⸙╽مرحبا عزيزي المطور \n⸙╽انت المطور الاساسي هنا \n⸙╽اليك ازرار سورس سناب \n⸙╽تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
-{'وضع اسم البوت','-› تحديث ⌁','وضع كليشه المطور'},
-{'-› المطورين ⌁','-› الاحصائيات ⌁'},
-{'-› المجموعات ⌁','روابط الكروبات','-› المشتركين ⌁'},
-{'-› تعطيل التواصل ⌁','-› تفعيل التواصل ⌁'},
-{'تنظيف الكروبات','-› قائمه العام ⌁','تنظيف المشتركين'},
-{'-› تغير المطور الاساسي ⌁'},
+{'وضع اسم البوت','↫ تحديث ⌁','وضع كليشه المطور'},
+{'↫ المطورين ⌁','↫ الاحصائيات ⌁'},
+{'↫ المجموعات ⌁','روابط الكروبات','↫ المشتركين ⌁'},
+{'↫ تعطيل التواصل ⌁','↫ تفعيل التواصل ⌁'},
+{'تنظيف الكروبات','↫ قائمه العام ⌁','تنظيف المشتركين'},
+{'↫ تغير المطور الاساسي ⌁'},
 {'تعطيل ترحيب البوت','تفعيل ترحيب البوت'},
-{'-› تغير معلومات الترحيب ⌁'},
-{'-› تعطيل المغادره ⌁','-› تفعيل المغادره ⌁'},
-{'-› تعطيل الاذاعه ⌁','-› تفعيل الاذاعه ⌁'},
-{'-› اذاعه بالتثبيت ⌁'},
-{'-› اذاعه عام ⌁','-› اذاعه خاص ⌁'},
-{'-› اذاعه عام بالتوجيه ⌁','-› اذاعه خاص بالتوجيه ⌁'},
+{'↫ تغير معلومات الترحيب ⌁'},
+{'↫ تعطيل المغادره ⌁','↫ تفعيل المغادره ⌁'},
+{'↫ تعطيل الاذاعه ⌁','↫ تفعيل الاذاعه ⌁'},
+{'↫ اذاعه بالتثبيت ⌁'},
+{'↫ اذاعه عام ⌁','↫ اذاعه خاص ⌁'},
+{'↫ اذاعه عام بالتوجيه ⌁','↫ اذاعه خاص بالتوجيه ⌁'},
 {'~ تعيين كلايش الاوامر ~'},
 {'تعطيل البوت الخدمي','تفعيل البوت الخدمي'},
 {'جلب نسخه السورس','تحديث السورس','جلب نسخه الكروبات'},
-{'-› حذف رد عام ⌁','-› الردود العام ⌁','-› اضف رد عام ⌁'},
-{'-› حذف رد الخاص ⌁','-› تعيين رد الخاص ⌁'},
+{'↫ حذف رد عام ⌁','↫ الردود العام ⌁','↫ اضف رد عام ⌁'},
+{'↫ حذف رد الخاص ⌁','↫ تعيين رد الخاص ⌁'},
 {'حذف قناة الاشتراك','قناة الاشتراك','تعيين قناة الاشتراك'},
 {'حذف كليشه الاشتراك','كليشه الاشتراك','تغير كليشه الاشتراك'},
 }
@@ -2022,7 +2022,7 @@ tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_us
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
 if data and data.messages_ and data.messages_[0].content_.sticker_ then
-SendText(DevId,'⸙╽تم ارسال الملصق من -› ⤈\n['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')',0,'md') 
+SendText(DevId,'⸙╽تم ارسال الملصق من -› ↡\n['..string.sub(dp.first_name_,0, 40)..'](tg://user?id='..dp.id_..')',0,'md') 
 return false
 end;end;end,nil);end,nil);end,nil);end
 if SecondSudo(msg) and msg.reply_to_message_id_ ~= 0  then    
@@ -2051,19 +2051,19 @@ return false
 end 
 if text then
 Dev_Abs(id_user, 0, 1, text, 1, "md")  
-Text = '⸙╽تم ارسال الرساله الى -› ⤈'
+Text = '⸙╽تم ارسال الرساله الى -› ↡'
 elseif msg.content_.ID == 'MessageSticker' then    
 sendSticker(id_user, msg.id_, 0, 1,nil, msg.content_.sticker_.sticker_.persistent_id_)   
-Text = '⸙╽تم ارسال الملصق الى -› ⤈'
+Text = '⸙╽تم ارسال الملصق الى -› ↡'
 elseif msg.content_.ID == 'MessagePhoto' then    
 sendPhoto(id_user, msg.id_, 0, 1,nil, msg.content_.photo_.sizes_[0].photo_.persistent_id_,(msg.content_.caption_ or ''))    
-Text = '⸙╽تم ارسال الصوره الى -› ⤈'
+Text = '⸙╽تم ارسال الصوره الى -› ↡'
 elseif msg.content_.ID == 'MessageAnimation' then    
 sendDocument(id_user, msg.id_, 0, 1,nil, msg.content_.animation_.animation_.persistent_id_)    
-Text = '⸙╽تم ارسال المتحركه الى -› ⤈'
+Text = '⸙╽تم ارسال المتحركه الى -› ↡'
 elseif msg.content_.ID == 'MessageVoice' then    
 sendVoice(id_user, msg.id_, 0, 1,nil, msg.content_.voice_.voice_.persistent_id_)    
-Text = '⸙╽تم ارسال البصمه الى -› ⤈'
+Text = '⸙╽تم ارسال البصمه الى -› ↡'
 end     
 SendText(DevId, Text..'\n'..'['..string.sub(data.first_name_,0, 40)..'](tg://user?id='..data.id_..')',0,'md') 
 end,nil);
@@ -2085,12 +2085,12 @@ DevAbs:del(SNAP..'Abs:Start:Bots'..msg.sender_user_id_)
 return false
 end
 if SecondSudo(msg) then
-if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == '-› تعيين رد الخاص ⌁' then 
+if text == 'تعيين رد الخاص' or text == 'ضع كليشه ستارت' or text == '↫ تعيين رد الخاص ⌁' then 
 DevAbs:set(SNAP..'Abs:Start:Bots'..msg.sender_user_id_,true) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي كليشة الستارت الان', 1, 'md')
 return false
 end
-if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == '-› حذف رد الخاص ⌁' then 
+if text == 'حذف رد الخاص' or text == 'حذف كليشه ستارت' or text == '↫ حذف رد الخاص ⌁' then 
 DevAbs:del(SNAP..'Start:Bot') 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم حذف كليشة الستارت بنجاح', 1, 'md')
 end
@@ -2104,12 +2104,12 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
-if text == 'تفعيل التواصل' or text == '-› تفعيل التواصل ⌁' then   
+if text == 'تفعيل التواصل' or text == '↫ تفعيل التواصل ⌁' then   
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تفعيل التواصل بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP..'Abs:Texting:Pv') 
 end
-if text == 'تعطيل التواصل' or text == '-› تعطيل التواصل ⌁' then  
+if text == 'تعطيل التواصل' or text == '↫ تعطيل التواصل ⌁' then  
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تعطيل التواصل بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP..'Abs:Texting:Pv',true) 
@@ -2204,7 +2204,7 @@ local NameChat = NameChat:gsub("*","")
 local NameChat = NameChat:gsub("{","") 
 local NameChat = NameChat:gsub("}","") 
 if not Sudo(msg) and not Bot(msg) then
-SendText(DevId,"⸙╽تم طرد البوت من المجموعه -› ⤈ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ⤈ \n❨ `"..msg.chat_id_.."` ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⸙╽تم طرد البوت من المجموعه -› ↡ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ↡ \n❨ `"..msg.chat_id_.."` ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
@@ -2305,7 +2305,7 @@ else
 LinkGroup = 'لا يوجد'
 end
 DevAbs:set(SNAP.."Abs:Groups:Links"..msg.chat_id_,LinkGroup) 
-SendText(DevId,"⸙╽تم تفعيل مجموعه جديده -› ⤈ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽موقعه في المجموعه -› "..status.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽عدد اعضاء المجموعه -› ❨ *"..NumMem.."* ❩\n⸙╽ايدي المجموعه -› ⤈ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ⤈\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⸙╽تم تفعيل مجموعه جديده -› ↡ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽موقعه في المجموعه -› "..status.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽عدد اعضاء المجموعه -› ❨ *"..NumMem.."* ❩\n⸙╽ايدي المجموعه -› ↡ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ↡\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
 end
 end end
 end,nil)
@@ -3542,25 +3542,21 @@ return false
 end
 --     Source SNAP     --
 if text == "الرابط" then
-if not DevAbs:get(SNAP.."Abs:Lock:GpLinksinline"..msg.chat_id_) then 
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAbs:get(SNAP.."Private:Group:Link"..msg.chat_id_) 
-if linkgpp.ok == true then 
-local Text = '᥀︙𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
-keyboard = {}  
-keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}}}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SNAPTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if not DevAbs:get(SNAP.."Abs:Lock:GpLinks"..msg.chat_id_) then 
+if DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_) then
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 ↬ ↡ \n━─━─━─ ₪ ─━─━─━\n"..DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
 else 
-end 
-end,nil) 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽لايوجد رابط ارسل -› ضع رابط او ارسل -› انشاء رابط للانشاء', 1, 'md')
+end
+else
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽جلب رابط المجموعه معطل', 1, 'md')
 end
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
-local SNAPTEAM = {' كول حبيبي ؟ اني '..NameBot..' ',' وياك القميل '..NameBot..' ',' اسمي القميل '..NameBot..' '}
+local SNAPTEAM = {"لتكول بوت اسمي "..NameBot.." 😒🔪","اسمي القميل "..NameBot.." 😚♥️","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false
 end
@@ -3572,7 +3568,7 @@ return false
 end
 if text and text == (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب') then 
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
-local SNAPTEAM = {'كول حبيبي ؟ اني '..NameBot..' ',' وياك القميل '..NameBot..' '} 
+local SNAPTEAM = {'😸♥️ هلا كلبي وياك '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','خبصتت امنةة شتريدد عااد 🤧😒💔'} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false 
 end
@@ -3955,7 +3951,7 @@ name = string.gsub(name,'👩‍🍳','👨‍🍳👨‍🍳👩‍🍳👨‍�
 name = string.gsub(name,'🧚‍♀️','🧚‍♂️🧚‍♂️🧚‍♂️🧚‍♂️🧚‍♂️🧚‍♀️🧚‍♂️🧚‍♂️')
 name = string.gsub(name,'🧚‍♂️','🧚‍♀️🧚‍♀️🧚‍♀️🧚‍♀️🧚‍♀️🧚‍♂️🧚‍♀️🧚‍♀️')
 name = string.gsub(name,'🧝‍♂️','🧝‍♀️🧝‍♀️🧝‍♀️🧝‍♂️🧝‍♀️🧝‍♀️🧝‍♀️🧝‍♀️')
-name = string.gsub(name,'🙍‍♂️','🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️')
+name = string.gsub(name,'🙍‍♂️','🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️??‍♂️🙎‍♂️')
 name = string.gsub(name,'🧖‍♂️','🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♂️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️')
 name = string.gsub(name,'👬','👭👭👭👭👬👭👭👭')
 name = string.gsub(name,'👨‍👨‍👧','👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦')
@@ -4037,7 +4033,7 @@ name = string.gsub(name,'15','25 - 10 = ?')
 name = string.gsub(name,'39','44 - 5 = ?')
 name = string.gsub(name,'5','12 + 1 - 8 = ?')
 name = string.gsub(name,'16','16 + 16 - 16 = ?')
-SNAPTEAM = '⸙╽اكمل المعادله التاليه -› ⤈\n{'..name..'} '
+SNAPTEAM = '⸙╽اكمل المعادله التاليه -› ↡\n{'..name..'} '
 Dev_Abs(msg.chat_id_, msg.id_, 1,SNAPTEAM, 1, 'md')
 return false
 end end
@@ -4165,7 +4161,7 @@ if text == 'خمن' and ChCheck(msg) or text == 'تخمين' and ChCheck(msg) th
 if not DevAbs:get(SNAP..'Abs:Lock:Games'..msg.chat_id_) then
 Num = math.random(1,20)
 DevAbs:set(SNAP.."GAMES:NUM"..msg.chat_id_,Num) 
-Dev_Abs(msg.chat_id_, msg.id_, 1,'⸙╽اهلا بك عزيزي في لعبة التخمين -› ⤈\n ━─━─━─ ₪ ─━─━─━\n⸙╽سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n⸙╽ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1,'⸙╽اهلا بك عزيزي في لعبة التخمين -› ↡\n ━─━─━─ ₪ ─━─━─━\n⸙╽سيتم تخمين عدد ما بين الـ1 والـ20 اذا تعتقد انك تستطيع الفوز جرب واللعب الان .\n⸙╽ملاحظه لديك ثلاث محاولات فقط فكر قبل ارسال تخمينك !', 1, 'md')
 DevAbs:setex(SNAP.."GAME:TKMEN"..msg.chat_id_.."" .. msg.sender_user_id_, 100, true)  
 return false  
 end
@@ -4228,7 +4224,7 @@ local SNAPTEAM = {
 'آخر مرة زرت مدينة الملاهي؟','آخر مرة أكلت أكلتك المفضّلة؟','الوضع الحالي؟\n‏1. سهران\n‏2. ضايج\n‏3. أتأمل','آخر شيء ضاع منك؟','كلمة أخيرة لشاغل البال؟','طريقتك المعتادة في التخلّص من الطاقة السلبية؟','شهر من أشهر العام له ذكرى جميلة معك؟','كلمة غريبة من لهجتك ومعناها؟🤓','‏- شيء سمعته عالق في ذهنك هاليومين؟','متى تكره الشخص الذي أمامك حتى لو كنت مِن أشد معجبينه؟','‏- أبرز صفة حسنة في صديقك المقرب؟','هل تشعر أن هنالك مَن يُحبك؟','اذا اكتشفت أن أعز أصدقائك يضمر لك السوء، موقفك الصريح؟','أجمل شيء حصل معك خلال هاليوم؟','صِف شعورك وأنت تُحب شخص يُحب غيرك؟👀💔','كلمة لشخص غالي اشتقت إليه؟💕','آخر خبر سعيد، متى وصلك؟','أنا آسف على ....؟','أوصف نفسك بكلمة؟','صريح، مشتاق؟','‏- صريح، هل سبق وخذلت أحدهم ولو عن غير قصد؟','‏- ماذا ستختار من الكلمات لتعبر لنا عن حياتك التي عشتها الى الآن؟💭','‏- فنان/ة تود لو يدعوكَ على مائدة عشاء؟😁❤','‏- تخيّل شيء قد يحدث في المستقبل؟','‏- للشباب | آخر مرة وصلك غزل من فتاة؟🌚','شخص أو صاحب عوضك ونساك مُر الحياة ما اسمه ؟','| اذا شفت حد واعجبك وعندك الجرأه انك تروح وتتعرف عليه ، مقدمة الحديث شو راح تكون ؟.','كم مره تسبح باليوم','نسبة النعاس عندك حاليًا؟','لو فقط مسموح شخص واحد تتابعه فالسناب مين بيكون ؟','يهمك ملابسك تكون ماركة ؟','وش الشيء الي تطلع حرتك فيه و زعلت ؟','عندك أخوان او خوات من الرضاعة؟','عندك معجبين ولا محد درا عنك؟',
 'أطول مدة قضيتها بعيد عن أهلك ؟','لو يجي عيد ميلادك تتوقع يجيك هدية؟','يبان عليك الحزن من " صوتك - ملامحك','وين تشوف نفسك بعد سنتين؟','وش يقولون لك لما تغني ؟','عندك حس فكاهي ولا نفسية؟','كيف تتصرف مع الشخص الفضولي ؟','كيف هي أحوال قلبك؟','حاجة تشوف نفسك مبدع فيها ؟','متى حبيت؟','شيء كل م تذكرته تبتسم ...','العلاقه السريه دايماً تكون حلوه؟','صوت مغني م تحبه','لو يجي عيد ميلادك تتوقع يجيك هدية؟','اذا احد سألك عن شيء م تعرفه تقول م اعرف ولا تتفلسف ؟','مع او ضد : النوم افضل حل لـ مشاكل الحياة؟','مساحة فارغة (..............) اكتب اي شيء تبين','اغرب اسم مر عليك ؟','عمرك كلمت فويس احد غير جنسك؟','اذا غلطت وعرفت انك غلطان تحب تعترف ولا تجحد؟','لو عندك فلوس وش السيارة اللي بتشتريها؟','وش اغبى شيء سويته ؟','شيء من صغرك ماتغير فيك؟','وش نوع الأفلام اللي تحب تتابعه؟','وش نوع الأفلام اللي تحب تتابعه؟','تجامل احد على حساب مصلحتك ؟','تتقبل النصيحة من اي شخص؟','كلمه ماسكه معك الفترة هذي ؟','متى لازم تقول لا ؟','اكثر شيء تحس انه مات ف مجتمعنا؟','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','هل تعتقد أن هنالك من يراقبك بشغف؟','اشياء اذا سويتها لشخص تدل على انك تحبه كثير ؟','اشياء صعب تتقبلها بسرعه ؟','اقتباس لطيف؟','أكثر جملة أثرت بك في حياتك؟','عندك فوبيا من شيء ؟.',
 'اكثر لونين تحبهم مع بعض؟','أجمل بيت شعر سمعته ...','سبق وراودك شعور أنك لم تعد تعرف نفسك؟','تتوقع فيه احد حاقد عليك ويكرهك ؟','أجمل سنة ميلادية مرت عليك ؟','لو فزعت/ي لصديق/ه وقالك مالك دخل وش بتسوي/ين؟','وش تحس انك تحتاج الفترة هاذي ؟','يومك ضاع على؟','@منشن .. شخص تخاف منه اذا عصب ...','فيلم عالق في ذهنك لا تنساه مِن روعته؟','تختار أن تكون غبي أو قبيح؟','الفلوس او الحب ؟','أجمل بلد في قارة آسيا بنظرك؟','ما الذي يشغل بالك في الفترة الحالية؟','احقر الناس هو من ...','وين نلقى السعاده برايك؟','اشياء تفتخر انك م سويتها ؟','تزعلك الدنيا ويرضيك ؟','وش الحب بنظرك؟','افضل هديه ممكن تناسبك؟','كم في حسابك البنكي ؟','كلمة لشخص أسعدك رغم حزنك في يومٍ من الأيام ؟','عمرك انتقمت من أحد ؟!','ما السيء في هذه الحياة ؟','غنية عندك معاها ذكريات🎵🎻','/','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أطول مدة نمت فيها كم ساعة؟','أصعب قرار ممكن تتخذه ؟','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أنت محبوب بين الناس؟ ولاكريه؟','إحساسك في هاللحظة؟','اخر شيء اكلته ؟','تشوف الغيره انانيه او حب؟','اذكر موقف ماتنساه بعمرك؟','اكثر مشاكلك بسبب ؟','اول ماتصحى من النوم مين تكلمه؟','آخر مرة ضحكت من كل قلبك؟','لو الجنسية حسب ملامحك وش بتكون جنسيتك؟','اكثر شيء يرفع ضغطك','اذكر موقف ماتنساه بعمرك؟','لو قالوا لك  تناول صنف واحد فقط من الطعام لمدة شهر .',
-'كيف تشوف الجيل ذا؟','ردة فعلك لو مزح معك شخص م تعرفه ؟','احقر الناس هو من ...','تحب ابوك ولا امك','آخر فيلم مسلسل والتقييم🎥؟','أقبح القبحين في العلاقة: الغدر أو الإهمال🤷🏼؟','كلمة لأقرب شخص لقلبك🤍؟','حط@منشن لشخص وقوله "حركتك مالها داعي"😼!','اذا جاك خبر مفرح اول واحد تعلمه فيه مين💃🏽؟','طبع يمكن يخليك تكره شخص حتى لو كنت تُحبه🙅🏻‍♀️؟','افضل ايام الاسبوع عندك🔖؟','يقولون ان الحياة دروس ، ماهو أقوى درس تعلمته من الحياة🏙؟','تاريخ لن تنساه📅؟','تحب الصيف والا الشتاء❄️☀️؟','شخص تحب تستفزه😈؟','شنو ينادونك وانت صغير (عيارتك)👼🏻؟','عقل يفهمك/ج ولا قلب يحبك/ج❤️؟','اول سفره لك وين رح تكون✈️؟','كم عدد اللي معطيهم بلوك👹؟','نوعية من الأشخاص تتجنبهم في حياتك❌؟','شاركنا صورة او فيديو من تصويرك؟📸','كم من عشره تعطي حظك📩؟','اكثر برنامج تواصل اجتماعي تحبه😎؟','من اي دوله انت🌍؟','اكثر دوله ودك تسافر لها🏞؟','مقولة "نكبر وننسى" هل تؤمن بصحتها🧓🏼؟','تعتقد فيه أحد يراقبك👩🏼‍💻؟','لو بيدك تغير الزمن ، تقدمه ولا ترجعه🕰؟','مشروبك المفضل🍹؟','‏قم بلصق آخر اقتباس نسخته؟💭','كم وزنك/ج طولك/ج؟🌚','كم كان عمرك/ج قبل ٨ سنين😈؟','دوله ندمت انك سافرت لها😁؟','لو قالو لك ٣ أمنيات راح تتحقق عالسريع شنو تكون🧞‍♀️؟','‏- نسبة احتياجك للعزلة من 10📊؟','شخص تحبه حظرك بدون سبب واضح، ردة فعلك🧐؟','مبدأ في الحياة تعتمد عليه دائما🕯؟'
+'كيف تشوف الجيل ذا؟','ردة فعلك لو مزح معك شخص م تعرفه ؟','احقر الناس هو من ...','تحب ابوك ولا امك','آخر فيلم مسلسل والتقييم🎥؟','أقبح القبحين في العلاقة: الغدر أو الإهمال🤷🏼؟','كلمة لأقرب شخص لقلبك🤍؟','حط@منشن لشخص وقوله "حركتك مالها داعي"😼!','اذا توفي خبر مفرح اول واحد تعلمه فيه مين💃🏽؟','طبع يمكن يخليك تكره شخص حتى لو كنت تُحبه🙅🏻‍♀️؟','افضل ايام الاسبوع عندك🔖؟','يقولون ان الحياة دروس ، ماهو أقوى درس تعلمته من الحياة🏙؟','تاريخ لن تنساه📅؟','تحب الصيف والا الشتاء❄️☀️؟','شخص تحب تستفزه😈؟','شنو ينادونك وانت صغير (عيارتك)👼🏻؟','عقل يفهمك/ج ولا قلب يحبك/ج❤️؟','اول سفره لك وين رح تكون✈️؟','كم عدد اللي معطيهم بلوك👹؟','نوعية من الأشخاص تتجنبهم في حياتك❌؟','شاركنا صورة او فيديو من تصويرك؟📸','كم من عشره تعطي حظك📩؟','اكثر برنامج تواصل اجتماعي تحبه😎؟','من اي دوله انت🌍؟','اكثر دوله ودك تسافر لها🏞؟','مقولة "نكبر وننسى" هل تؤمن بصحتها🧓🏼؟','تعتقد فيه أحد يراقبك👩🏼‍💻؟','لو بيدك تغير الزمن ، تقدمه ولا ترجعه🕰؟','مشروبك المفضل🍹؟','‏قم بلصق آخر اقتباس نسخته؟💭','كم وزنك/ج طولك/ج؟🌚','كم كان عمرك/ج قبل ٨ سنين😈؟','دوله ندمت انك سافرت لها😁؟','لو قالو لك ٣ أمنيات راح تتحقق عالسريع شنو تكون🧞‍♀️؟','‏- نسبة احتياجك للعزلة من 10📊؟','شخص تحبه حظرك بدون سبب واضح، ردة فعلك🧐؟','مبدأ في الحياة تعتمد عليه دائما🕯؟'
 }  
 Dev_Abs(msg.chat_id_, msg.id_, 1, ''..SNAPTEAM[math.random(#SNAPTEAM)]..'' , 1, 'md')  
 return false
@@ -4238,7 +4234,7 @@ end
 if text and (text == 'الالعاب' or text == 'العاب' or text == 'اللعبه') and ChCheck(msg) then
 if not DevAbs:get(SNAP..'Abs:Lock:Games'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1,[[
-⸙╽قائمة العاب المجموعه -› ⤈
+⸙╽قائمة العاب المجموعه -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽لعبة التخمين -› خمن
 ⸙╽لعبة الامثله -› امثله
@@ -4257,13 +4253,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,[[
 ━─━─━─ ₪ ─━─━─━
 ⸙╽نقاطي • بيع نقاطي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]], 1, 'md')
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عذرا الالعاب معطله في المجموعه', 1, 'md')
 end
 end
-if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" or text == "-› الالعاب المتطوره ⌔" then
+if text == "الالعاب المتطوره" or text == "الالعاب الاحترافيه" or text == "↫ الالعاب المتطوره ᥀" then
 if not DevAbs:get(SNAP..'Abs:Lock:Gamesinline'..msg.chat_id_) then
 Text =[[
 *⸙╽قائمه الالعاب المتطوره اضغط للعب*
@@ -4285,7 +4281,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}},
+{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4453,12 +4449,12 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-𓄇[˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
+[˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⌔ Source Channel',url="https://t.me/iinzzz"}},
-{{text = '⌔ Developer',url="t.me/RFRFF"},{text = '⌔ Tws SNAP',url="https://t.me/@Y22fbot"}},{{text= '⌔ Support Source .',url="https://t.me/@xssuuu"}}
+{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="https://t.me/iinzzz"}},
+{{text = '• ᴅᴇᴠᴇ sɴᴀᴘ 🦅',url="t.me/RFRFF"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4635,10 +4631,10 @@ end
 end,nil)
 end,nil)
 end 
-if text == "مبرمج السورس" or text == "مطور السورس" or text == "المبرمج" then 
-Text = "• *The developer and programmer of this source is* : [tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi](https://t.me/RFRFF)."
+if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
+Text = "• *The • ᴅᴇᴠᴇ sɴᴀᴘ 🦅 and programmer of this source is* : [𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi](https://t.me/RFRFF)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi .',url="t.me/RFRFF"}}}
+keyboard.inline_keyboard = {{{text='- 𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi •',url="t.me/RFRFF"}}}
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/RFRFF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
@@ -4718,7 +4714,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, result.id_, 1, 'مواححح احلاا بوسةة المطوريي😻🔥💗', 1, 'html')
 return false
 end 
-local SNAPTEAM = "صارر ستاذيي ??🏻‍♂️♥️" 
+local SNAPTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
 Dev_Abs(msg.chat_id_, msg.id_, 1,SNAPTEAM, 1, 'md') 
 local SNAPTEAM = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
 Dev_Abs(msg.chat_id_, result.id_, 1,''..SNAPTEAM[math.random(#SNAPTEAM)], 1, 'md') 
@@ -4808,7 +4804,7 @@ if DevAbs:sismember(SNAP..'Abs:Cleaner:'..msg.chat_id_, result.sender_user_id_) 
 cleaner = 'المنظفين • ' else cleaner = ''
 end
 if RankChecking(result.sender_user_id_,msg.chat_id_) ~= false then
-ReplyStatus(msg,result.sender_user_id_,"Reply","⸙╽تم تنزيله من -› ⤈\n~ ( "..secondsudo..sudobot..managerall..adminall..vpall..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
+ReplyStatus(msg,result.sender_user_id_,"Reply","⸙╽تم تنزيله من -› ↡\n~ ( "..secondsudo..sudobot..managerall..adminall..vpall..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
 else 
 ReplyStatus(msg,result.sender_user_id_,"Reply","⸙╽لم تتم ترقيته مسبقا")  
 end
@@ -4902,7 +4898,7 @@ if DevAbs:sismember(SNAP..'Abs:Cleaner:'..msg.chat_id_, result.id_) then
 cleaner = 'المنظفين • ' else cleaner = ''
 end
 if RankChecking(result.id_,msg.chat_id_) ~= false then
-ReplyStatus(msg,result.id_,"Reply","⸙╽تم تنزيله من -› ⤈\n~ ( "..secondsudo..sudobot..managerall..adminall..vpall..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
+ReplyStatus(msg,result.id_,"Reply","⸙╽تم تنزيله من -› ↡\n~ ( "..secondsudo..sudobot..managerall..adminall..vpall..basicconstructor..constructor..manager..admins..vipmem..cleaner.." ) ~")  
 else 
 ReplyStatus(msg,result.id_,"Reply","⸙╽لم تتم ترقيته مسبقا")  
 end 
@@ -5667,23 +5663,23 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ⤈\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -5701,23 +5697,23 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ⤈\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -5734,13 +5730,13 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽الحساب محذوف", 1, "md")
 return false  
 end
-local Text = '⸙╽قم باستعمال الازرار للتحكم العضو -› ⤈\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
+local Text = '⸙╽قم باستعمال الازرار للتحكم العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 inline = {
 {{text="رفع رتبه",callback_data=msg.sender_user_id_..":SetRtba:"..result.sender_user_id_},{text="تنزيل رتبه",callback_data=msg.sender_user_id_..":RemRtba:"..result.sender_user_id_}},
 {{text="كتم",callback_data=msg.sender_user_id_..":Mute:"..result.sender_user_id_},{text="الغاء كتم",callback_data=msg.sender_user_id_..":UnMute:"..result.sender_user_id_}},
 {{text="حظر",callback_data=msg.sender_user_id_..":Ban:"..result.sender_user_id_},{text="الغاء حظر",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},
 {{text="تقيد",callback_data=msg.sender_user_id_..":Tked:"..result.sender_user_id_},{text="الغاء تقيد",callback_data=msg.sender_user_id_..":UnTked:"..result.sender_user_id_}},
-{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}}
+{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}
 }
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -6444,7 +6440,7 @@ end
 end
 end
 --     Source SNAP     --
-if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "-› تغير المطور الاساسي ⌁") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
+if (text == "تغير المطور الاساسي" or text == "نقل ملكيه البوت" or text == "تغيير المطور الاساسي" or text == "↫ تغير المطور الاساسي ⌁") and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 send(msg.chat_id_, msg.id_,'⸙╽يجب التاكد ان المطور الجديد ارسل start لخاص البوت بعد ذلك يمكنك ارسال ايدي المطور')
 DevAbs:setex(SNAP.."Abs:EditDev"..msg.sender_user_id_,300,true)
 end
@@ -6460,7 +6456,7 @@ if dp.first_name_ ~= false then
 DevAbs:del(SNAP.."Abs:EditDev"..msg.sender_user_id_)
 DevAbs:set(SNAP.."Abs:NewDev"..msg.sender_user_id_,dp.id_)
 if dp.username_ ~= false then DevUser = '\n⸙╽المعرف -› [@'..dp.username_..']' else DevUser = '' end
-local Text = '⸙╽الايدي -› '..dp.id_..DevUser..'\n⸙╽الاسم -› ['..dp.first_name_..'](tg://user?id='..dp.id_..')\n⸙╽تم حفظ المعلومات بنجاح\n⸙╽استخدم الازرار للتاكيد -› ⤈'
+local Text = '⸙╽الايدي -› '..dp.id_..DevUser..'\n⸙╽الاسم -› ['..dp.first_name_..'](tg://user?id='..dp.id_..')\n⸙╽تم حفظ المعلومات بنجاح\n⸙╽استخدم الازرار للتاكيد -› ↡'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="نعم",callback_data="/setyes"},{text="لا",callback_data="/setno"}}} 
 Msg_id = msg.id_/2097152/0.5
@@ -6616,7 +6612,7 @@ end
 if Admin(msg) then
 if text == "المميزين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:VipMem:'..msg.chat_id_)
-text = "⸙╽قائمة المميزين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المميزين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6634,7 +6630,7 @@ if Manager(msg) then
 if text == "الادمنيه" and ChCheck(msg) or text == "الادمنية" and ChCheck(msg) then 
 local abs =  'Abs:Admins:'..msg.chat_id_
 local List = DevAbs:smembers(SNAP..abs)
-text = "⸙╽قائمة الادمنيه -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة الادمنيه -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6651,7 +6647,7 @@ end end
 if Constructor(msg) then
 if text == "المدراء" and ChCheck(msg) or text == "مدراء" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Managers:'..msg.chat_id_)
-text = "⸙╽قائمة المدراء -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المدراء -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6666,7 +6662,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنظفين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Cleaner:'..msg.chat_id_)
-text = "⸙╽قائمة المنظفين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المنظفين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6683,7 +6679,7 @@ end end
 if BasicConstructor(msg) then
 if text == "المنشئين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Constructor:'..msg.chat_id_)
-text = "⸙╽قائمة المنشئين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المنشئين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6700,7 +6696,7 @@ end end
 if AbsConstructor(msg) then
 if text == "المالكين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:AbsConstructor:'..msg.chat_id_)
-text = "⸙╽قائمة المالكين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المالكين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6715,7 +6711,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "المنشئين الاساسيين" and ChCheck(msg) or text == "منشئين اساسيين" and ChCheck(msg) or text == "المنشئين الاساسين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:BasicConstructor:'..msg.chat_id_)
-text = "⸙╽قائمة المنشئين الاساسيين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المنشئين الاساسيين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6745,7 +6741,7 @@ if abbas.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {{{text=dp.first_name_,url=("t.me/"..dp.username_ or "t.me/iinzzz")}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..abbas.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape("⸙╽مالك المجموعه -› ⤈").."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo='..abbas.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape("⸙╽مالك المجموعه -› ↡").."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 else
 SendText(msg.chat_id_,"⸙╽مالك المجموعه -› ["..dp.first_name_.."](tg://user?id="..dp.id_..")",msg.id_/2097152/0.5,'md')
 end
@@ -6759,7 +6755,7 @@ end
 if Admin(msg) then
 if text == "المكتومين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Muted:'..msg.chat_id_)
-text = "⸙╽قائمة المكتومين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المكتومين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6775,7 +6771,7 @@ end
 --     Source SNAP     --
 if text == "المقيدين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Tkeed:'..msg.chat_id_)
-text = "⸙╽قائمة المقيدين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المقيدين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6791,7 +6787,7 @@ end
 --     Source SNAP     --
 if text == "المحظورين" and ChCheck(msg) or text == "المحضورين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:Ban:'..msg.chat_id_)
-text = "⸙╽قائمة المحظورين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المحظورين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6806,7 +6802,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 if text == "قائمه المنع" and ChCheck(msg) then
 local List = DevAbs:hkeys(SNAP..'Abs:Filters:'..msg.chat_id_)
-text = "⸙╽قائمة المنع -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المنع -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k, v in pairs(List) do
 text = text..k..'~ ❨ '..v..' ❩\n'
 end
@@ -6819,7 +6815,7 @@ end
 --     Source SNAP     --
 if text == "المطايه" and ChCheck(msg) or text == "المطاية" and ChCheck(msg) then
 local List = DevAbs:smembers(SNAP..'User:Donky:'..msg.chat_id_)
-text = "⸙╽قائمة مطاية المجموعه 😹💔 -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة مطاية المجموعه 😹💔 -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6835,7 +6831,7 @@ end
 --     Source SNAP     --
 if text == "المطورين الثانويين" and SecondSudo(msg) or text == "الثانويين" and SecondSudo(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:SecondSudo:')
-text = "⸙╽قائمة المطورين الثانويين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المطورين الثانويين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6850,11 +6846,11 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source SNAP     --
 if SudoBot(msg) then
-if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "-› قائمه العام ⌁" and ChCheck(msg) then 
+if text == "قائمه العام" and ChCheck(msg) or text == "المحظورين عام" and ChCheck(msg) or text == "المكتومين عام" and ChCheck(msg) or text == "↫ قائمه العام ⌁" and ChCheck(msg) then 
 local BanAll = DevAbs:smembers(SNAP..'Abs:BanAll:')
 local MuteAll = DevAbs:smembers(SNAP..'Abs:MuteAll:')
 if #BanAll ~= 0 then 
-text = "⸙╽قائمة المحظورين عام -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المحظورين عام -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(BanAll) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6866,7 +6862,7 @@ else
 text = ""
 end
 if #MuteAll ~= 0 then 
-text = text.."⸙╽قائمة المكتومين عام -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = text.."⸙╽قائمة المكتومين عام -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(MuteAll) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6885,9 +6881,9 @@ end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
 end 
 --     Source SNAP     --
-if text == "المطورين" and ChCheck(msg) or text == "-› المطورين ⌁" and ChCheck(msg) then 
+if text == "المطورين" and ChCheck(msg) or text == "↫ المطورين ⌁" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:SudoBot:')
-text = "⸙╽قائمة المطورين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المطورين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local sudouser = DevAbs:get(SNAP..'Abs:Sudos'..v) 
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
@@ -6904,7 +6900,7 @@ end
 --     Source SNAP     --
 if text == "المدراء العامين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:ManagerAll:')
-text = "⸙╽قائمة المدراء العامين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المدراء العامين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6920,7 +6916,7 @@ end
 --     Source SNAP     --
 if text == "المميزين عام" and ChCheck(msg) or text == "المميزين العامين" and ChCheck(msg) then 
 local List = DevAbs:smembers(SNAP..'Abs:VipAll:')
-text = "⸙╽قائمة المميزين العام -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة المميزين العام -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -6937,7 +6933,7 @@ end
 if text == "الادمنيه العامين" and ChCheck(msg) then 
 local abs =  'Abs:AdminAll:'
 local List = DevAbs:smembers(SNAP..abs)
-text = "⸙╽قائمة الادمنيه العامين -› ⤈ \n━─━─━─ ₪ ─━─━─━\n"
+text = "⸙╽قائمة الادمنيه العامين -› ↡ \n━─━─━─ ₪ ─━─━─━\n"
 for k,v in pairs(List) do
 local username = DevAbs:get(SNAP..'Save:UserName'..v)
 if username then
@@ -7407,7 +7403,7 @@ end
 --     Source SNAP     --
 if SecondSudo(msg) then
 if text and text:match("^تعيين الايدي العام$") or text and text:match("^تعين الايدي العام$") or text and text:match("^تعيين كليشة الايدي$") then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽رجائا اتبع التعليمات للتعيين \n⸙╽لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه -› ⤈\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n━─━─━─ ₪ ─━─━─━', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽رجائا اتبع التعليمات للتعيين \n⸙╽لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه -› ↡\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n━─━─━─ ₪ ─━─━─━', 1, 'md')
 DevAbs:set("SNAP:New:id:"..SNAP..msg.sender_user_id_,'SNAPTEAM')
 return "SNAPTEAM"
 end
@@ -7429,7 +7425,7 @@ end
 end
 --     Source SNAP     --
 if text and text:match("^تعيين الايدي$") and ChCheck(msg) or text and text:match("^تعين الايدي$") and ChCheck(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽رجائا اتبع التعليمات للتعيين \n⸙╽لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه -› ⤈\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n━─━─━─ ₪ ─━─━─━', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽رجائا اتبع التعليمات للتعيين \n⸙╽لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه -› ↡\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n━─━─━─ ₪ ─━─━─━', 1, 'md')
 DevAbs:set("SNAP:New:id:"..SNAP..msg.chat_id_..msg.sender_user_id_,'SNAPTEAM')
 return "SNAPTEAM"
 end
@@ -7781,7 +7777,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم حفظ كليشة الترحيب',
 return false   
 end
 if text and text:match("^ضع ترحيب$") and ChCheck(msg) or text and text:match("^وضع ترحيب$") and ChCheck(msg) or text and text:match("^اضف ترحيب$") and ChCheck(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي الترحيب الان\n⸙╽تستطيع اضافة مايلي -› ⤈\n⸙╽دالة عرض الاسم -› firstname\n⸙╽دالة عرض المعرف -› username', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي الترحيب الان\n⸙╽تستطيع اضافة مايلي -› ↡\n⸙╽دالة عرض الاسم -› firstname\n⸙╽دالة عرض المعرف -› username', 1, 'md')
 DevAbs:set(SNAP..'Abs:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_,true)
 end
 if text and text:match("^حذف الترحيب$") and ChCheck(msg) or text and text:match("^حذف ترحيب$") and ChCheck(msg) then
@@ -7852,15 +7848,15 @@ return false
 end
 --     Source SNAP     --
 if SudoBot(msg) then
-if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "-› الاحصائيات ⌁" then
+if text and text == "الاحصائيات" and ChCheck(msg) or text and text == "↫ الاحصائيات ⌁" then
 local gps = DevAbs:scard(SNAP.."Abs:Groups") local users = DevAbs:scard(SNAP.."Abs:Users") 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽احصائيات البوت -› ⤈\n⸙╽عدد المشتركين -› ❨ '..users..' ❩\n⸙╽عدد المجموعات -› ❨ '..gps..' ❩', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽احصائيات البوت -› ↡\n⸙╽عدد المشتركين -› ❨ '..users..' ❩\n⸙╽عدد المجموعات -› ❨ '..gps..' ❩', 1, 'md')
 end
-if text and text == "المشتركين" and ChCheck(msg) or text and text == "-› المشتركين ⌁" then
+if text and text == "المشتركين" and ChCheck(msg) or text and text == "↫ المشتركين ⌁" then
 local users = DevAbs:scard(SNAP.."Abs:Users")
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عدد المشتركين -› ❨ '..users..' ❩', 1, 'md')
 end
-if text and text == "المجموعات" and ChCheck(msg) or text and text == "-› المجموعات ⌁" then
+if text and text == "المجموعات" and ChCheck(msg) or text and text == "↫ المجموعات ⌁" then
 local gps = DevAbs:scard(SNAP.."Abs:Groups")
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عدد المجموعات -› ❨ '..gps..' ❩', 1, 'md')
 end
@@ -8015,7 +8011,7 @@ end
 end
 --     Source SNAP     --
 if Admin(msg) then
-if text == "امسح" or text == "تنظيف التعديل" and ChCheck(msg) then   
+if text == "تنظيف تعديل" or text == "تنظيف التعديل" and ChCheck(msg) then   
 Abs_Del = {[0]= msg.id_}
 local Message = msg.id_
 for i=1,100 do
@@ -8033,7 +8029,7 @@ end
 end
 DeleteMessage(msg.chat_id_,Abs_Del2)
 end,nil)  
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم تنظيف الميديا المعدله', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم تنظيف 100 من الرسائل المعدله', 1, 'md')
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -8538,7 +8534,7 @@ if tonumber(SetSpam) < 40 then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽اختر عدد اكبر من 40 حرف ', 1, 'md')
 else
 DevAbs:set(SNAP..'Abs:Spam:Text'..msg.chat_id_,SetSpam)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم وضع عدد السبام -›'..SetSpam, 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم وضع عدد السبام ↫'..SetSpam, 1, 'md')
 end
 end
 end
@@ -8554,7 +8550,7 @@ if GetInfo.result.can_invite_users == true then INV = '✔️' else INV = '✖�
 if GetInfo.result.can_pin_messages == true then PIN = '✔️' else PIN = '✖️' end
 if GetInfo.result.can_restrict_members == true then BAN = '✔️' else BAN = '✖️' end
 if GetInfo.result.can_promote_members == true then VIP = '✔️' else VIP = '✖️' end 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽صلاحيات البوت هي -› ⤈\n━─━─━─ ₪ ─━─━─━\n⸙╽حذف الرسائل -› '..DEL..'\n⸙╽دعوة المستخدمين -› '..INV..'\n⸙╽حظر المستخدمين -› '..BAN..'\n⸙╽تثبيت الرسائل -› '..PIN..'\n⸙╽تغيير المعلومات -› '..EDT..'\n⸙╽اضافة مشرفين -› '..VIP..'\n━─━─━─ ₪ ─━─━─━', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽صلاحيات البوت هي -› ↡\n━─━─━─ ₪ ─━─━─━\n⸙╽حذف الرسائل -› '..DEL..'\n⸙╽دعوة المستخدمين -› '..INV..'\n⸙╽حظر المستخدمين -› '..BAN..'\n⸙╽تثبيت الرسائل -› '..PIN..'\n⸙╽تغيير المعلومات -› '..EDT..'\n⸙╽اضافة مشرفين -› '..VIP..'\n━─━─━─ ₪ ─━─━─━', 1, 'md')
 end end
 if text and text:match("^تغير رد المطور (.*)$") then
 local Text = text:match("^تغير رد المطور (.*)$") 
@@ -8612,7 +8608,7 @@ end
 if text == "كشف البوتات" and ChCheck(msg) then 
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = '⸙╽*قائمة البوتات* -› ⤈ \n━─━─━─ ₪ ─━─━─━\n'
+text = '⸙╽*قائمة البوتات* -› ↡ \n━─━─━─ ₪ ─━─━─━\n'
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -8888,7 +8884,7 @@ if DevAbs:get(SNAP..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه'
 if DevAbs:get(SNAP..'Abs:Lock:Farsi'..msg.chat_id_) then lock_farsi = 'مقفله' else lock_farsi = 'مفتوحه' end
 local Flood_Num = DevAbs:hget(SNAP.."Abs:Spam:Group:User"..msg.chat_id_,"Num:Spam") or 5
 --     Source SNAP     --
-local TXTE = "⸙╽اعدادات المجموعه -› ⤈\n━─━─━─ ₪ ─━─━─━\n"
+local TXTE = "⸙╽اعدادات المجموعه -› ↡\n━─━─━─ ₪ ─━─━─━\n"
 .."⸙╽الروابط -› "..mute_links.."\n"
 .."⸙╽المعرف -› "..lock_tag.."\n"
 .."⸙╽البوتات -› "..lock_bots.."\n"
@@ -8921,7 +8917,7 @@ local TXTE = "⸙╽اعدادات المجموعه -› ⤈\n━─━─━─
 .."⸙╽التكرار -› "..flood.."\n"
 .."⸙╽عدد التكرار -› "..Flood_Num.."\n"
 .."⸙╽عدد السبام -› "..spam_c.."\n"
-.."━─━─━─ ₪ ─━─━─━\n⸙╽[Source Channel](https://t.me/iinzzz)\n"
+.."━─━─━─ ₪ ─━─━─━\n⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)\n"
 Dev_Abs(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -9002,7 +8998,7 @@ return false
 end 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(text)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "⸙╽قائمة الزخرفه -› ⤈\n━─━─━─ ₪ ─━─━─━\n"
+t = "⸙╽قائمة الزخرفه -› ↡\n━─━─━─ ₪ ─━─━─━\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9023,7 +9019,7 @@ if text and text:match("^زخرفه (.*)$") and ChCheck(msg) or text and text:ma
 local TextZrf = text:match("^زخرفه (.*)$") or text:match("^زخرف (.*)$") 
 UrlZrf = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZrf)) 
 Zrf = JSON.decode(UrlZrf) 
-t = "⸙╽قائمة الزخرفه -› ⤈\n━─━─━─ ₪ ─━─━─━\n"
+t = "⸙╽قائمة الزخرفه -› ↡\n━─━─━─ ₪ ─━─━─━\n"
 i = 0
 for k,v in pairs(Zrf.ok) do
 i = i + 1
@@ -9066,7 +9062,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text == "نسبه الحب" and ChCheck(msg) or text == "نسبة الحب" and ChCheck(msg) then
 DevAbs:set(SNAP..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسمين لحساب نسبة الحب بينهما كمثال -› جاك وروز', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسمين لحساب نسبة الحب بينهما كمثال -› توفي وحيدر', 1, 'md')
 end
 end
 if text and text ~= "نسبه الحب" and text ~= "نسبة الحب" and DevAbs:get(SNAP..'LoveNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
@@ -9083,7 +9079,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text == "نسبه الكره" and ChCheck(msg) or text == "نسبة الكره" and ChCheck(msg) then
 DevAbs:set(SNAP..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسمين لحساب نسبة الكره بينهما كمثال -› جاك وروز', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسمين لحساب نسبة الكره بينهما كمثال -› توفي وحيدر', 1, 'md')
 end
 end
 if text and text ~= "نسبه الكره" and text ~= "نسبة الكره" and DevAbs:get(SNAP..'HataNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
@@ -9100,7 +9096,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text and (text == "نسبه الرجوله" or text == "نسبة الرجوله" or text == "نسبه رجوله" or text == "نسبة رجوله") and ChCheck(msg) then
 DevAbs:set(SNAP..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسم الشخص لقياس نسبة رجولته كمثال -› جاك', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسم الشخص لقياس نسبة رجولته كمثال -› توفي', 1, 'md')
 end
 end
 if text and text ~= "نسبه الرجوله" and text ~= "نسبة الرجوله" and text ~= "نسبه رجوله" and text ~= "نسبة رجوله" and DevAbs:get(SNAP..'RjolaNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
@@ -9134,7 +9130,7 @@ end
 if not DevAbs:get(SNAP..'Abs:Nsba:Abs'..msg.chat_id_) then
 if text and (text == "نسبه الغباء" or text == "نسبة الغباء") and ChCheck(msg) then
 DevAbs:set(SNAP..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_,true) 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسم الشخص لقياس نسبة غبائه كمثال -› جاك او روز', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽قم بارسل اسم الشخص لقياس نسبة غبائه كمثال -› توفي او روز', 1, 'md')
 end
 end
 if text and text ~= "نسبه الغباء" and text ~= "نسبة الغباء" and DevAbs:get(SNAP..'StupidNsba:Abs'..msg.chat_id_..msg.sender_user_id_) then
@@ -9207,32 +9203,12 @@ if Audios.Info == true then
 local Text ='⸙╽تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="t.me/iinzzz"}},
+{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..msg.chat_id_..'&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
-end
-if text and (text == "متحركه" or text == "-› متحركه ᥀") and not DevAbs:get(SNAP..'Abs:gif:Abs'..msg.chat_id_) and SourceCh(msg) then
-Abs = math.random(2,1075); 
-local Text ='*᥀︙تم اختيار المتحركه لك*'
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '᥀ SNAP Team .',url="t.me/iinzzz"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/GifSNAP/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text and (text == "ميمز" or text == "-› ميمز ᥀") and not DevAbs:get(SNAP..'Abs:memz:Abs'..msg.chat_id_) and SourceCh(msg) then
-Abs = math.random(2,1201); 
-local Text ='*᥀︙تم اختيار مقطع الميمز لك*'
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '᥀ SNAP Team .',url="t.me/iinzzz"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/MemzSNAP/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --     Source SNAP     --
 if Admin(msg) then
@@ -9321,22 +9297,22 @@ DevAbs:set(SNAP..'Abs:Lock:AllRed'..msg.chat_id_,true)
 end
 --     Source SNAP     --
 if SecondSudo(msg) then
-if text == 'تفعيل المغادره' or text == '-› تفعيل المغادره ⌁' then 
+if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ⌁' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تفعيل المغادره بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP.."Abs:Left:Bot"..SNAP)
 end
-if text == 'تعطيل المغادره' or text == '-› تعطيل المغادره ⌁' then 
+if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ⌁' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تعطيل المغادره بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP.."Abs:Left:Bot"..SNAP,true) 
 end 
-if text == 'تفعيل الاذاعه' or text == '-› تفعيل الاذاعه ⌁' then 
+if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ⌁' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تفعيل الاذاعه بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:del(SNAP.."Abs:Send:Bot"..SNAP)
 end
-if text == 'تعطيل الاذاعه' or text == '-› تعطيل الاذاعه ⌁' then 
+if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ⌁' then 
 local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽تم تعطيل الاذاعه بنجاح'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 DevAbs:set(SNAP.."Abs:Send:Bot"..SNAP,true) 
@@ -9678,7 +9654,7 @@ LinkGroup = 'لا يوجد'
 end
 DevAbs:set(SNAP.."Abs:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(DevId,"⸙╽تم تفعيل مجموعه جديده -› ⤈ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽عدد اعضاء المجموعه -› ❨ *"..NumMem.."* ❩\n⸙╽ايدي المجموعه -› ⤈ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ⤈\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⸙╽تم تفعيل مجموعه جديده -› ↡ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽عدد اعضاء المجموعه -› ❨ *"..NumMem.."* ❩\n⸙╽ايدي المجموعه -› ↡ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ↡\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -9716,7 +9692,7 @@ LinkGroup = 'لا يوجد'
 end
 DevAbs:set(SNAP.."Abs:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(DevId,"⸙╽تم تعطيل مجموعه جديده -› ⤈ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ⤈ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ⤈\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⸙╽تم تعطيل مجموعه جديده -› ↡ \n━─━─━─ ₪ ─━─━─━\n⸙╽بواسطة -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ↡ \n❨ `"..msg.chat_id_.."` ❩\n⸙╽رابط المجموعه -› ↡\n❨ ["..LinkGroup.."] ❩\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -9745,12 +9721,12 @@ local NameChat = NameChat:gsub("}","")
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_))
 if LinkGp.ok == true then 
 LinkGroup = LinkGp.result
-LinkGroup = "⸙╽رابط المجموعه -› ⤈\n❨ ["..LinkGroup.."] ❩"
+LinkGroup = "⸙╽رابط المجموعه -› ↡\n❨ ["..LinkGroup.."] ❩"
 else
 LinkGroup = '⸙╽ليست لدي صلاحية الدعوه لهذه المجموعه !'
 end
 if not Sudo(msg) then
-SendText(DevId,"⸙╽هناك من بحاجه الى مساعده -› ⤈ \n━─━─━─ ₪ ─━─━─━\n⸙╽الشخص -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"⸙╽هناك من بحاجه الى مساعده -› ↡ \n━─━─━─ ₪ ─━─━─━\n⸙╽الشخص -› "..Name.."\n⸙╽اسم المجموعه -› ["..NameChat.."]\n⸙╽ايدي المجموعه -› ↡ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n━─━─━─ ₪ ─━─━─━\n⸙╽الوقت -› "..os.date("%I:%M%p").."\n⸙╽التاريخ -› "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
@@ -9777,7 +9753,7 @@ for k,v in pairs(List) do
 local GroupsManagers = DevAbs:scard(SNAP.."Abs:Managers:"..v) or 0
 local GroupsAdmins = DevAbs:scard(SNAP.."Abs:Admins:"..v) or 0
 local Groupslink = DevAbs:get(SNAP.."Abs:Groups:Links" ..v)
-Text = Text..k.." ↬ ⤈ \n⸙╽Group ID ↬ "..v.."\n⸙╽Group Link ↬ "..(Groupslink or "Not Found").."\n⸙╽Group Managers ↬ "..GroupsManagers.."\n⸙╽Group Admins ↬ "..GroupsAdmins.."\n━─━─━─ ₪ ─━─━─━\n"
+Text = Text..k.." ↬ ↡ \n⸙╽Group ID ↬ "..v.."\n⸙╽Group Link ↬ "..(Groupslink or "Not Found").."\n⸙╽Group Managers ↬ "..GroupsManagers.."\n⸙╽Group Admins ↬ "..GroupsAdmins.."\n━─━─━─ ₪ ─━─━─━\n"
 end
 local File = io.open('GroupsBot.txt', 'w')
 File:write(Text)
@@ -9788,13 +9764,13 @@ end
 end
 end
 --     Source SNAP     --
-if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "-› اذاعه خاص ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه خاص" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevAbs:setex(SNAP.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
+local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ↡ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9855,13 +9831,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة "..AbsText.." بنجا�
 DevAbs:del(SNAP.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "-› اذاعه عام ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevAbs:setex(SNAP.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
+local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ↡ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -9922,7 +9898,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة "..AbsText.." بنجا�
 DevAbs:del(SNAP.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "-› اذاعه عام بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه عام بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9946,7 +9922,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة رسالتك بالتو
 DevAbs:del(SNAP.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "-› اذاعه خاص بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه خاص بالتوجيه" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه خاص بالتوجيه ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -9970,13 +9946,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم اذاعة رسالتك بالتو
 DevAbs:del(SNAP.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) 
 end
 --     Source SNAP     --
-if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "-› اذاعه بالتثبيت ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text == "اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) or text == "↫ اذاعه بالتثبيت ⌁" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 if DevAbs:get(SNAP.."Abs:Send:Bot"..SNAP) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⸙╽الاذاعه معطله من قبل المطور الاساسي")
 return false
 end
 DevAbs:setex(SNAP.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
+local SNAPTEAM = '⸙╽اهلا عزيزي -› '..AbsRank(msg)..' \n⸙╽ارسل لي سواء -› ↡ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽للخروج ارسل -› ( الغاء ) \n ✓'
 absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
 return false
 end 
@@ -10135,7 +10111,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم الغاء الامر" ,  1, "md")
 DevAbs:del(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽ارسل لي الرد سواء كان -› ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽يمكنك اضافة الى النص -› ⤈\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n━─━─━─ ₪ ─━─━─━\n⸙╽للخروج ارسل -› ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽ارسل لي الرد سواء كان -› ↡\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽يمكنك اضافة الى النص -› ↡\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n━─━─━─ ₪ ─━─━─━\n⸙╽للخروج ارسل -› ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
 DevAbs:set(SNAP..'Abs:Add:GpText'..msg.sender_user_id_..msg.chat_id_,text)
 DevAbs:sadd(SNAP..'Abs:Manager:GpRed'..msg.chat_id_,text)
@@ -10143,7 +10119,7 @@ DevAbs:set(SNAP..'DelManagerRep'..msg.chat_id_,text)
 return false
 end end
 --     Source SNAP     --
-if text == 'حذف رد عام' and SecondSudo(msg) or text == '-› حذف رد عام ⌁' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
+if text == 'حذف رد عام' and SecondSudo(msg) or text == '↫ حذف رد عام ⌁' and SecondSudo(msg) or text == 'مسح رد عام' and SecondSudo(msg) then
 local List = DevAbs:smembers(SNAP.."Abs:Sudo:AllRed")
 if #List == 0 then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽لا توجد ردود مضافه" ,  1, "md")
@@ -10153,7 +10129,7 @@ DevAbs:set(SNAP.."Abs:Add:AllRed"..msg.sender_user_id_,'DelAllRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽حسنا ارسل الكلمه لحذفها " ,  1, "md")
 return false
 end
-if text == 'اضف رد عام' and SecondSudo(msg) or text == '-› اضف رد عام ⌁' and SecondSudo(msg) then
+if text == 'اضف رد عام' and SecondSudo(msg) or text == '↫ اضف رد عام ⌁' and SecondSudo(msg) then
 DevAbs:set(SNAP.."Abs:Add:AllRed"..msg.sender_user_id_,'SetAllRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽حسنا ارسل الكلمه الان " ,  1, "md")
 return false
@@ -10166,7 +10142,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم الغاء الامر" ,  1, "md")
 DevAbs:del(SNAP..'Abs:Add:AllRed'..msg.sender_user_id_)
 return false
 end
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽ارسل لي الرد سواء كان -› ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽يمكنك اضافة الى النص -› ⤈\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n━─━─━─ ₪ ─━─━─━\n⸙╽للخروج ارسل -› ( الغاء )\n ✓" ,  1, "md")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽ارسل لي الرد سواء كان -› ↡\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⸙╽يمكنك اضافة الى النص -› ↡\n━─━─━─ ₪ ─━─━─━\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n━─━─━─ ₪ ─━─━─━\n⸙╽للخروج ارسل -› ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(SNAP.."Abs:Add:AllRed"..msg.sender_user_id_,'SaveAllRed')
 DevAbs:set(SNAP.."Abs:Add:AllText"..msg.sender_user_id_, text)
 DevAbs:sadd(SNAP.."Abs:Sudo:AllRed",text)
@@ -10176,7 +10152,7 @@ end end
 --     Source SNAP     --
 if text == 'الردود المتعدده' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(SNAP..'Abs:Manager:GpRedod'..msg.chat_id_)
-MsgRep = '⸙╽قائمة الردود المتعدده -› ⤈ \n━─━─━─ ₪ ─━─━─━\n'
+MsgRep = '⸙╽قائمة الردود المتعدده -› ↡ \n━─━─━─ ₪ ─━─━─━\n'
 for k,v in pairs(redod) do
 MsgRep = MsgRep..k..'~ (`'..v..'`) • {*العدد -› '..#DevAbs:smembers(SNAP..'Abs:Text:GpTexts'..v..msg.chat_id_)..'*}\n' 
 end
@@ -10201,7 +10177,7 @@ end
 --     Source SNAP     --
 if text == 'الردود' and Manager(msg) and ChCheck(msg) or text == 'ردود المدير' and Manager(msg) and ChCheck(msg) then
 local redod = DevAbs:smembers(SNAP..'Abs:Manager:GpRed'..msg.chat_id_)
-MsgRep = '⸙╽ردود المدير -› ⤈ \n━─━─━─ ₪ ─━─━─━\n'
+MsgRep = '⸙╽ردود المدير -› ↡ \n━─━─━─ ₪ ─━─━─━\n'
 for k,v in pairs(redod) do
 if DevAbs:get(SNAP.."Abs:Gif:GpRed"..v..msg.chat_id_) then
 dp = 'متحركه 🎭'
@@ -10248,9 +10224,9 @@ return false
 end
 end
 --     Source SNAP     --
-if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "-› الردود العام ⌁" and SecondSudo(msg) then
+if  text == "ردود المطور" and SecondSudo(msg) or text == "الردود العام" and SecondSudo(msg) or text == "ردود العام" and SecondSudo(msg) or text == "↫ الردود العام ⌁" and SecondSudo(msg) then
 local redod = DevAbs:smembers(SNAP.."Abs:Sudo:AllRed")
-MsgRep = '⸙╽ردود المطور -› ⤈ \n━─━─━─ ₪ ─━─━─━\n'
+MsgRep = '⸙╽ردود المطور -› ↡ \n━─━─━─ ₪ ─━─━─━\n'
 for k,v in pairs(redod) do
 if DevAbs:get(SNAP.."Abs:Gif:AllRed"..v) then
 dp = 'متحركه 🎭'
@@ -10339,19 +10315,19 @@ end
 if text == "الاوامر" or text == "اوامر" or text == "مساعده" then
 local Help = DevAbs:get(SNAP..'Abs:Help')
 local Text = [[
-⸙╽اهلا بك في قائمة الاوامر -› ⤈ 
+⸙╽اهلا بك في قائمة الاوامر -› ↡ 
 ━─━─━─ ₪ ─━─━─━
-⸙╽م1 -› اوامر الحمايه
-⸙╽م2 -› اوامر الادمنيه
-⸙╽م3 -› اوامر المدراء
-⸙╽م4 -› اوامر المنشئين
-⸙╽م5 -› اوامر المطورين
-⸙╽م6 -› اوامر الاعضاء
+⸙╽م1 -› • اوامر الحمايه •
+⸙╽م2 -› • اوامر الادمنيه •
+⸙╽م3 -› • اوامر المدراء •
+⸙╽م4 -› • اوامر المنشئين •
+⸙╽م5 -› • اوامر المطورين •
+⸙╽م6 -› • اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
+keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..msg.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..msg.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..msg.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
 Msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(Help or Text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -10370,11 +10346,11 @@ return false end
 end
 if text == "م1" or text == "م١" or text == "اوامر1" or text == "اوامر١" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help1')
 local Text = [[
-⸙╽اوامر حماية المجموعه -› ⤈
+⸙╽اوامر حماية المجموعه -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽قفل • فتح -› الروابط
 ⸙╽قفل • فتح -› المعرفات
@@ -10409,9 +10385,9 @@ local Text = [[
 ⸙╽قفل • فتح -› الفارسيه
 ⸙╽قفل • فتح -› التفليش
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر حمايه اخرى -› ⤈
+⸙╽اوامر حمايه اخرى -› ↡
 ━─━─━─ ₪ ─━─━─━
-⸙╽قفل • فتح + الامر -› ⤈
+⸙╽قفل • فتح + الامر -› ↡
 ⸙╽التكرار بالطرد
 ⸙╽التكرار بالكتم
 ⸙╽التكرار بالتقيد
@@ -10419,7 +10395,7 @@ local Text = [[
 ⸙╽البوتات بالطرد
 ⸙╽البوتات بالتقيد
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10438,11 +10414,11 @@ return false end
 end
 if text == "م2" or text == "م٢" or text == "اوامر2" or text == "اوامر٢" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help2')
 local Text = [[
-⸙╽اوامر الادمنيه -› ⤈
+⸙╽• اوامر الادمنيه  -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽الاعدادت
 ⸙╽تاك للكل 
@@ -10495,7 +10471,7 @@ local Text = [[
 ⸙╽تقييد يوم + عدد الايام
 ⸙╽الغاء تقييد -› لالغاء التقييد بالوقت
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10514,11 +10490,11 @@ return false end
 end
 if text == "م3" or text == "م٣" or text == "اوامر3" or text == "اوامر٣" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help3')
 local Text = [[
-⸙╽اوامر المدراء -› ⤈
+⸙╽• اوامر المدراء • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽فحص البوت
 ⸙╽ضع اسم + الاسم
@@ -10531,7 +10507,7 @@ local Text = [[
 ⸙╽حذف الردود المتعدده
 ⸙╽حذف قوائم المنع
 ⸙╽منع -› بالرد على ( ملصق • صوره • متحركه )
-⸙╽حذف قائمه منع + -› ⤈
+⸙╽حذف قائمه منع + -› ↡
 ( الصور • المتحركات • الملصقات )
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تنزيل الكل
@@ -10543,7 +10519,7 @@ local Text = [[
 ⸙╽اعاده التثبيت
 ⸙╽الغاء تثبيت الكل
 ━─━─━─ ₪ ─━─━─━
-⸙╽تغير رد + اسم الرتبه + النص -› ⤈
+⸙╽تغير رد + اسم الرتبه + النص -› ↡
 ⸙╽المطور • منشئ الاساسي
 ⸙╽المنشئ • المدير • الادمن
 ⸙╽المميز • المنظف • العضو
@@ -10553,14 +10529,14 @@ local Text = [[
 ⸙╽تعيين الايدي -› لتعيين الكليشه
 ⸙╽حذف الايدي -› لحذف الكليشه
 ━─━─━─ ₪ ─━─━─━
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽اطردني • الايدي بالصوره • الابراج
 ⸙╽معاني الاسماء • اوامر النسب • انطق
 ⸙╽الايدي • تحويل الصيغ • اوامر التحشيش
 ⸙╽ردود المدير • ردود المطور • التحقق
 ⸙╽ضافني • حساب العمر • الزخرفه • غنيلي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10579,11 +10555,11 @@ return false end
 end
 if text == "م٤" or text == "م4" or text == "اوامر4" or text == "اوامر٤" then
 if not Admin(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض اوامر الاعضاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر يخص الرتب الاعلى فقط\n⸙╽ارسل -› (م6) لعرض • اوامر الاعضاء •', 1, 'md')
 else
 local Help = DevAbs:get(SNAP..'Abs:Help4')
 local Text = [[
-⸙╽اوامر المنشئين -› ⤈
+⸙╽• اوامر المنشئين • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تنزيل الكل
 ⸙╽الميديا • امسح
@@ -10598,11 +10574,11 @@ local Text = [[
 ⸙╽المنظفين • حذف المنظفين
 ⸙╽رفع مدير • تنزيل مدير
 ⸙╽المدراء • حذف المدراء
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽نزلني • امسح
 ⸙╽الحظر • الكتم
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المنشئين الاساسيين -› ⤈
+⸙╽• اوامر المنشئين • الاساسيين -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽وضع لقب + اللقب
 ⸙╽تفعيل • تعطيل -› الرفع
@@ -10612,14 +10588,14 @@ local Text = [[
 ⸙╽رفع بكل الصلاحيات
 ⸙╽حذف القوائم
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المالكين -› ⤈
+⸙╽اوامر المالكين -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽رفع • تنزيل -› منشئ اساسي
 ⸙╽حذف المنشئين الاساسيين 
 ⸙╽المنشئين الاساسيين 
 ⸙╽حذف جميع الرتب
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10642,7 +10618,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽هذا الامر للمطورين فق
 else
 local Help = DevAbs:get(SNAP..'Abs:Help5')
 local Text = [[
-⸙╽اوامر المطورين -› ⤈
+⸙╽• اوامر المطورين • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽الكروبات
 ⸙╽المطورين
@@ -10662,7 +10638,7 @@ local Text = [[
 ⸙╽رفع • تنزيل -› مميز عام
 ⸙╽حذف • المميزين عام 
 ━─━─━─ ₪ ─━─━─━
-⸙╽اوامر المطور الاساسي -› ⤈
+⸙╽اوامر المطور الاساسي -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تحديث
 ⸙╽الملفات
@@ -10700,12 +10676,12 @@ local Text = [[
 ━─━─━─ ₪ ─━─━─━
 ⸙╽تفعيل ملف + اسم الملف
 ⸙╽تعطيل ملف + اسم الملف
-⸙╽تفعيل • تعطيل + الامر -› ⤈
+⸙╽تفعيل • تعطيل + الامر -› ↡
 ⸙╽الاذاعه • الاشتراك الاجباري
 ⸙╽ترحيب البوت • المغادره
 ⸙╽البوت الخدمي • التواصل
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10725,7 +10701,7 @@ end
 if text == "م٦" or text == "م6" or text == "اوامر6" or text == "اوامر٦" then
 local Help = DevAbs:get(SNAP..'Abs:Help6')
 local Text = [[
-⸙╽اوامر الاعضاء -› ⤈
+⸙╽• اوامر الاعضاء • -› ↡
 ━─━─━─ ₪ ─━─━─━
 ⸙╽السورس • موقعي • رتبتي • معلوماتي 
 ⸙╽رقمي • لقبي • نبذتي • صلاحياتي • غنيلي
@@ -10753,7 +10729,7 @@ local Text = [[
 ⸙╽تحويل + بالرد -› صوره • ملصق • صوت • بصمه
 ⸙╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[Source Channel](https://t.me/iinzzz)
+⸙╽[sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
@@ -10762,13 +10738,13 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽جاري تحديث سورس سناب', 1, 'md') 
 os.execute('rm -rf SNAP.lua') 
-os.execute('wget https://raw.githubusercontent.com/SNAPTEAM/SNAP/master/SNAP.lua') 
+os.execute('wget https://raw.githubusercontent.com/SNAPTHAKER/SNAP/master/SNAP.lua') 
 dofile('SNAP.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم التحديث الى الاصدار الجديد', 1, 'md') 
 end
-if text == 'تحديث' or text == 'تحديث البوت' or text == '-› تحديث ⌁' then  
+if text == 'تحديث' or text == 'تحديث البوت' or text == '↫ تحديث ⌁' then  
 dofile('SNAP.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n        ( تم تحديث ملفات البوت )        \n\27[0;34;49m\n") 
@@ -10776,7 +10752,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⸙╽تم تحديث ملفات البوت",
 end 
 --     Source SNAP     --
 if text == 'الملفات' then
-Files = '\n⸙╽الملفات المفعله في البوت -› ⤈ \n━─━─━─ ₪ ─━─━─━\n'
+Files = '\n⸙╽الملفات المفعله في البوت -› ↡ \n━─━─━─ ₪ ─━─━─━\n'
 i = 0
 for v in io.popen('ls Files'):lines() do
 if v:match(".lua$") then
@@ -10790,12 +10766,12 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/SNAPTEAM/SNAPFiles/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/SNAPTHAKER/SNAPFiles/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n⸙╽قائمه ملفات متجر سورس سناب\n⸙╽الملفات المتوفره حاليا -› ⤈\n━─━─━─ ₪ ─━─━─━\n"
+local TextS = "\n⸙╽قائمة ملفات متجر سورس سناب\n⸙╽الملفات المتوفره حاليا -› ↡\n━─━─━─ ₪ ─━─━─━\n"
 local TextE = "━─━─━─ ₪ ─━─━─━\n⸙╽علامة -› (✔) تعني الملف مفعل\n⸙╽علامة -› (✖️) تعني الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -10807,7 +10783,7 @@ else
 CheckFile = "(✖️)"
 end
 NumFile = NumFile + 1
-TextS = TextS.."⸙╽"..Info..' -› ⤈\n'..NumFile.."~ : `"..name..'` ↬ '..CheckFile.."\n"
+TextS = TextS.."⸙╽"..Info..' -› ↡\n'..NumFile.."~ : `"..name..'` ↬ '..CheckFile.."\n"
 end
 send(msg.chat_id_, msg.id_,TextS..TextE) 
 end
@@ -10822,7 +10798,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/SNAPTEAM/SNAPFiles/master/SNAPFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/SNAPTHAKER/SNAPFiles/master/SNAPFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n⸙╽الملف -› *"..FileName.."*\n⸙╽تم تعطيله وحذفه من البوت بنجاح") 
@@ -10834,7 +10810,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/SNAPTEAM/SNAPFiles/master/SNAPFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/SNAPTHAKER/SNAPFiles/master/SNAPFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -10864,7 +10840,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽تم تعطيل الترحيب عند �
 DevAbs:set(SNAP..'Abs:Lock:BotWelcome',true)
 return false
 end 
-if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '-› تغير معلومات الترحيب ⌁') and SecondSudo(msg) then    
+if text and (text == 'تغير معلومات الترحيب' or text == 'تغيير معلومات الترحيب' or text == '↫ تغير معلومات الترحيب ⌁') and SecondSudo(msg) then    
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽ارسل لي نص الترحيب', 1, 'md') 
 DevAbs:del(SNAP..'Abs:Text:BotWelcome')
 DevAbs:del(SNAP..'Abs:Photo:BotWelcome')
@@ -10940,7 +10916,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽للمطور الاساسي فقط ', 1
 else
 local chtext = DevAbs:get(SNAP.."Abs:ChText")
 if chtext then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽كليشة الاشتراك -› ⤈ \n━─━─━─ ₪ ─━─━─━\n['..chtext..']', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽كليشة الاشتراك -› ↡ \n━─━─━─ ₪ ─━─━─━\n['..chtext..']', 1, 'md')
 else
 if DevAbs:get(SNAP.."Abs:ChId") then
 local Check = https.request('https://api.telegram.org/bot'..TokenBot..'/getChat?chat_id='..DevAbs:get(SNAP.."Abs:ChId"))
@@ -10973,12 +10949,12 @@ MemoryUsage=`free -m | awk 'NR==2{printf "%s/%sMB {%.2f%%}\n", $3,$2,$3*100/$2 }
 HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 Percentage=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 UpTime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes"}'`
-echo '⸙╽نظام التشغيل -› ⤈\n`'"$LinuxVersion"'`' 
-echo '━─━─━─ ₪ ─━─━─━\n⸙╽الذاكره العشوائيه -› ⤈\n`'"$MemoryUsage"'`'
-echo '━─━─━─ ₪ ─━─━─━\n⸙╽وحدة التخزين -› ⤈\n`'"$HardDisk"'`'
-echo '━─━─━─ ₪ ─━─━─━\n⸙╽المعالج -› ⤈\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
-echo '━─━─━─ ₪ ─━─━─━\n⸙╽الدخول -› ⤈\n`'`whoami`'`'
-echo '━─━─━─ ₪ ─━─━─━\n⸙╽مدة تشغيل السيرفر -› ⤈\n`'"$UpTime"'`'
+echo '⸙╽نظام التشغيل -› ↡\n`'"$LinuxVersion"'`' 
+echo '━─━─━─ ₪ ─━─━─━\n⸙╽الذاكره العشوائيه -› ↡\n`'"$MemoryUsage"'`'
+echo '━─━─━─ ₪ ─━─━─━\n⸙╽وحدة التخزين -› ↡\n`'"$HardDisk"'`'
+echo '━─━─━─ ₪ ─━─━─━\n⸙╽المعالج -› ↡\n`'"`grep -c processor /proc/cpuinfo`""Core ~ {$Percentage%} "'`'
+echo '━─━─━─ ₪ ─━─━─━\n⸙╽الدخول -› ↡\n`'`whoami`'`'
+echo '━─━─━─ ₪ ─━─━─━\n⸙╽مدة تشغيل السيرفر -› ↡\n`'"$UpTime"'`'
 ]]):read('*a'), 1, 'md')
 end
 end
@@ -11096,7 +11072,7 @@ end
 end 
 ------------------------------------------------
 -- This Source Was Developed By (ABS) @RFRFF.--
---   This Is The Source Channel @iinzzz .   --
+--   This Is The sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇. @iinzzz .   --
 --                 - SNAP -                 --
---         -- https://t.me/@iinzzz --         --
+--         -- https://t.me/iinzzz --         --
 ------------------------------------------------ 
