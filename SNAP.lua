@@ -4635,7 +4635,7 @@ end
 end,nil)
 end,nil)
 end 
-if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
+if text == "مبرمج السورس" or text == "مطور السورس" or text == "المبرمج" then 
 Text = "• *The developer and programmer of this source is* : [tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi](https://t.me/RFRFF)."
 keyboard = {} 
 keyboard.inline_keyboard = {{{text='- tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi .',url="t.me/RFRFF"}}}
