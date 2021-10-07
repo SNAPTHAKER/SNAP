@@ -1,6 +1,6 @@
 ------------------------------------------------
 -- This Source Was Developed By (ABS) @RFRFF.--
---   This Is The • sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ • @iinzzz .   --
+--   This Is The sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌ @iinzzz .   --
 --                 - SNAP -                 --
 --         -- https://t.me/iinzzz --         --
 ------------------------------------------------ 
@@ -540,7 +540,7 @@ parse_mode = "Html"
 end
 end
 keyboard = {}
-keyboard.inline_keyboard = {{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 local Abs = "https://api.telegram.org/bot" ..TokenBot.. '/sendMessage?chat_id=' .. chat_id
 if reply_to_message_id ~= 0 then
 Abs = Abs .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 
@@ -598,7 +598,7 @@ elseif markdown == "html" then
 url = url.."&parse_mode=HTML" 
 end 
 keyboard = {}
-keyboard.inline_keyboard = {{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 url = url..'&reply_markup='..JSON.encode(keyboard)
 return GetApi(url) 
 end
@@ -1185,21 +1185,21 @@ end
 local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text="رفع مطور ثانوي",callback_data=data.sender_user_id_..":SetSecondSudo:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId},{text="رفع مطور",callback_data=data.sender_user_id_..":SetSudoBot:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text="رفع مالك",callback_data=data.sender_user_id_..":SetAbsConstructor:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع منشئ اساسي",callback_data=data.sender_user_id_..":SetBasicConstructor:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منشئ",callback_data=data.sender_user_id_..":SetConstructor:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text="رفع منظف",callback_data=data.sender_user_id_..":SetCleaner:"..AbsId},{text="رفع مدير",callback_data=data.sender_user_id_..":SetManager:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId},{text="رفع ادمن",callback_data=data.sender_user_id_..":SetAdmin:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="رفع مميز",callback_data=data.sender_user_id_..":SetMem:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1214,21 +1214,21 @@ end
 local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 keyboard = {} 
 if Sudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text="تنزيل مطور ثانوي",callback_data=data.sender_user_id_..":RemSecondSudo:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId},{text="تنزيل مطور",callback_data=data.sender_user_id_..":RemSudoBot:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text="تنزيل مالك",callback_data=data.sender_user_id_..":RemAbsConstructor:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل منشئ اساسي",callback_data=data.sender_user_id_..":RemBasicConstructor:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منشئ",callback_data=data.sender_user_id_..":RemConstructor:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text="تنزيل منظف",callback_data=data.sender_user_id_..":RemCleaner:"..AbsId},{text="تنزيل مدير",callback_data=data.sender_user_id_..":RemManager:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId},{text="تنزيل ادمن",callback_data=data.sender_user_id_..":RemAdmin:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(data) then
-keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+keyboard.inline_keyboard = {{{text="تنزيل مميز",callback_data=data.sender_user_id_..":RemMem:"..AbsId}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end 
 https.request("https://api.telegram.org/bot"..TokenBot..'/editMessageText?chat_id='..Chat_Id2..'&message_id='..Msg_Id2..'&text=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -1283,7 +1283,7 @@ local Text = [[
 ⸙╽م5 -› • اوامر المطورين •
 ⸙╽م6 -› • اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
@@ -1345,7 +1345,7 @@ local Text = [[
 ⸙╽البوتات بالطرد
 ⸙╽البوتات بالتقيد
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1415,7 +1415,7 @@ local Text = [[
 ⸙╽تقييد يوم + عدد الايام
 ⸙╽الغاء تقييد -› لالغاء التقييد بالوقت
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1474,7 +1474,7 @@ local Text = [[
 ⸙╽ردود المدير • ردود المطور • التحقق
 ⸙╽ضافني • حساب العمر • الزخرفه • غنيلي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1527,7 +1527,7 @@ local Text = [[
 ⸙╽المنشئين الاساسيين 
 ⸙╽حذف جميع الرتب
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1607,7 +1607,7 @@ local Text = [[
 ⸙╽ترحيب البوت • المغادره
 ⸙╽البوت الخدمي • التواصل
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1649,7 +1649,7 @@ local Text = [[
 ⸙╽تحويل + بالرد -› صوره • ملصق • صوت • بصمه
 ⸙╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..data.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..data.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="• اوامر المطورين •",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -4253,7 +4253,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1,[[
 ━─━─━─ ₪ ─━─━─━
 ⸙╽نقاطي • بيع نقاطي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]], 1, 'md')
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙╽عذرا الالعاب معطله في المجموعه', 1, 'md')
@@ -4281,7 +4281,7 @@ keyboard.inline_keyboard = {
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
 {{text="لعبة النينجا",url='https://t.me/gamee?game=GravityNinja21'},{text="لعبة الكرتي",url='https://t.me/gamee?game=KarateKid2'}},
-{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
+{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4449,11 +4449,11 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-[˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
+[˛ ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="https://t.me/iinzzz"}},
+{{text = '˛ ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="https://t.me/iinzzz"}},
 {{text = '˛ tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi 🦅',url="t.me/RFRFF"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
@@ -5665,21 +5665,21 @@ return false
 end
 local Text = '⸙╽قم باستعمال الازرار لرفع العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text="رفع مطور ثانوي",callback_data=msg.sender_user_id_..":SetSecondSudo:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_},{text="رفع مطور",callback_data=msg.sender_user_id_..":SetSudoBot:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text="رفع مالك",callback_data=msg.sender_user_id_..":SetAbsConstructor:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع منشئ اساسي",callback_data=msg.sender_user_id_..":SetBasicConstructor:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منشئ",callback_data=msg.sender_user_id_..":SetConstructor:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -5699,21 +5699,21 @@ return false
 end
 local Text = '⸙╽قم باستعمال الازرار لتنزيل العضو -› ↡\n⸙╽العضو -› ['..dp.first_name_..'](t.me/'..(dp.username_ or 'iinzzz')..')'
 if Sudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text="تنزيل مطور ثانوي",callback_data=msg.sender_user_id_..":RemSecondSudo:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SecondSudo(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_},{text="تنزيل مطور",callback_data=msg.sender_user_id_..":RemSudoBot:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif SudoBot(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text="تنزيل مالك",callback_data=msg.sender_user_id_..":RemAbsConstructor:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif AbsConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل منشئ اساسي",callback_data=msg.sender_user_id_..":RemBasicConstructor:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif BasicConstructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منشئ",callback_data=msg.sender_user_id_..":RemConstructor:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Constructor(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text="تنزيل منظف",callback_data=msg.sender_user_id_..":RemCleaner:"..result.sender_user_id_},{text="تنزيل مدير",callback_data=msg.sender_user_id_..":RemManager:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Manager(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_},{text="تنزيل ادمن",callback_data=msg.sender_user_id_..":RemAdmin:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 elseif Admin(msg) then
-inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
+inline = {{{text="تنزيل مميز",callback_data=msg.sender_user_id_..":RemMem:"..result.sender_user_id_}},{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}}
 end
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -5736,7 +5736,7 @@ inline = {
 {{text="كتم",callback_data=msg.sender_user_id_..":Mute:"..result.sender_user_id_},{text="الغاء كتم",callback_data=msg.sender_user_id_..":UnMute:"..result.sender_user_id_}},
 {{text="حظر",callback_data=msg.sender_user_id_..":Ban:"..result.sender_user_id_},{text="الغاء حظر",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},
 {{text="تقيد",callback_data=msg.sender_user_id_..":Tked:"..result.sender_user_id_},{text="الغاء تقيد",callback_data=msg.sender_user_id_..":UnTked:"..result.sender_user_id_}},
-{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}
+{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}}
 }
 SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
 end,nil)
@@ -8917,7 +8917,7 @@ local TXTE = "⸙╽اعدادات المجموعه -› ↡\n━─━─━─
 .."⸙╽التكرار -› "..flood.."\n"
 .."⸙╽عدد التكرار -› "..Flood_Num.."\n"
 .."⸙╽عدد السبام -› "..spam_c.."\n"
-.."━─━─━─ ₪ ─━─━─━\n⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)\n"
+.."━─━─━─ ₪ ─━─━─━\n⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)\n"
 Dev_Abs(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -9200,10 +9200,10 @@ data,res = https.request('https://apiabs.ml/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
-local Text ='⸙╽تم اختيار المقطع الصوتي لك'
+local Text ='• تع ؏ٛـمَݛيہِٰ غنيتلك 🦇'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
+{{text = '˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="t.me/iinzzz"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..msg.chat_id_..'&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10324,7 +10324,7 @@ local Text = [[
 ⸙╽م5 -› • اوامر المطورين •
 ⸙╽م6 -› • اوامر الاعضاء •
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="• اوامر الادمنيه •",callback_data="/HelpList2:"..msg.sender_user_id_},{text="• اوامر الحمايه •",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="• اوامر المنشئين •",callback_data="/HelpList4:"..msg.sender_user_id_},{text="• اوامر المدراء •",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="• اوامر الاعضاء •",callback_data="/HelpList6:"..msg.sender_user_id_},{text="• اوامر المطورين •",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -10395,7 +10395,7 @@ local Text = [[
 ⸙╽البوتات بالطرد
 ⸙╽البوتات بالتقيد
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10471,7 +10471,7 @@ local Text = [[
 ⸙╽تقييد يوم + عدد الايام
 ⸙╽الغاء تقييد -› لالغاء التقييد بالوقت
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10536,7 +10536,7 @@ local Text = [[
 ⸙╽ردود المدير • ردود المطور • التحقق
 ⸙╽ضافني • حساب العمر • الزخرفه • غنيلي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10595,7 +10595,7 @@ local Text = [[
 ⸙╽المنشئين الاساسيين 
 ⸙╽حذف جميع الرتب
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10681,7 +10681,7 @@ local Text = [[
 ⸙╽ترحيب البوت • المغادره
 ⸙╽البوت الخدمي • التواصل
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10729,7 +10729,7 @@ local Text = [[
 ⸙╽تحويل + بالرد -› صوره • ملصق • صوت • بصمه
 ⸙╽انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ━─━─━─ ₪ ─━─━─━
-⸙╽[• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •](https://t.me/iinzzz)
+⸙╽[sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌](https://t.me/iinzzz)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
@@ -11072,7 +11072,7 @@ end
 end 
 ------------------------------------------------
 -- This Source Was Developed By (ABS) @RFRFF.--
---   This Is The • sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ • @iinzzz .   --
+--   This Is The sَoٰuِِ𝖱ٰcٌe sَِ𝗇ٰaَpِ ◡‌ @iinzzz .   --
 --                 - SNAP -                 --
 --         -- https://t.me/iinzzz --         --
 ------------------------------------------------ 
