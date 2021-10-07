@@ -1,5 +1,5 @@
 ------------------------------------------------
--- This Source Was Developed By (ABS) @yk_uu.--
+-- This Source Was Developed By (ABS) @RFRFF.--
 --   This Is The • sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ • @iinzzz .   --
 --                 - SNAP -                 --
 --         -- https://t.me/iinzzz --         --
@@ -4449,12 +4449,12 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-[˛ snap 𝗍𝖾𝖺𝗆 🕷.](https://t.me/iinzzz)
+[˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ •',url="https://t.me/iinzzz"}},
-{{text = '• ᴅᴇᴠᴇ sɴᴀᴘ 🦅',url="t.me/YK_uu"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
+{{text = '˛ sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="https://t.me/iinzzz"}},
+{{text = '˛ tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi 🦅',url="t.me/RFRFF"},{text = 'ᴛᴡs sɴᴀᴘ 🕷',url="https://t.me/Y22fbot"}},{{text= '• Support Source • .',url="https://t.me/xssuuu"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4632,11 +4632,11 @@ end,nil)
 end,nil)
 end 
 if text == "مطور السورس" or text == "مطور السورس" or text == "المبرمج" then 
-Text = "• *The • ᴅᴇᴠᴇ sɴᴀᴘ 🦅 and programmer of this source is* : [𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi](https://t.me/yk_uu)."
+Text = "• *The • ᴅᴇᴠᴇ sɴᴀᴘ 🦅 and programmer of this source is* : [𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi](https://t.me/RFRFF)."
 keyboard = {} 
-keyboard.inline_keyboard = {{{text='- 𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi •',url="t.me/yk_uu"}}}
+keyboard.inline_keyboard = {{{text='- 𝗍𝗈𝖿𝖾ٰ 𝖺𝗅’halfi •',url="t.me/RFRFF"}}}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/yk_uu&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/RFRFF&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 --     Source SNAP     --
@@ -11071,7 +11071,7 @@ end
 --     Source SNAP     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (ABS) @yk_uu.--
+-- This Source Was Developed By (ABS) @RFRFF.--
 --   This Is The • sᴏᴜʀᴄᴇ ᴄʜᴀɴɴᴇʟ • @iinzzz .   --
 --                 - SNAP -                 --
 --         -- https://t.me/iinzzz --         --
