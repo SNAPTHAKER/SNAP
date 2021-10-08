@@ -3556,19 +3556,19 @@ end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
-local SNAPTEAM = {"لتكول بوت اسمي "..NameBot.." 😒🔪","اسمي القميل "..NameBot.." 😚♥️","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
+local SNAPTEAM = {"؏ٛـمَݛيہِٰ اسمي  "..NameBot.." 😒🔪","؏ٛـمَݛيہِٰ وياك🦅 "..NameBot.." 💗👄","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false
 end
 if text == 'اسم البوت' or text == 'البوت شنو اسمه' or text == 'شسمه البوت' or text == 'البوت شسمه' then
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب') 
-local SNAPTEAM = {"اسمي القميل "..NameBot.." 😚♥️","هلاا يروحيي وياكك "..NameBot.." 😻♥️"} 
+local SNAPTEAM = {"؏ٛـمَݛيہِٰ وياك🦅 "..NameBot.." 💗👄","هلاا يروحيي وياكك "..NameBot.." 😻♥️"} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false
 end
 if text and text == (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب') then 
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
-local SNAPTEAM = {'😸♥️ هلا كلبي وياك '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','خبصتت امنةة شتريدد عااد 🤧😒💔'} 
+local SNAPTEAM = {'ها ؏ٛـمَݛيہِٰ وياك 😩💗 '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','ها عاࢪ شتريد 😩😂💗'} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false 
 end
