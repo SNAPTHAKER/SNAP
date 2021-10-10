@@ -10777,20 +10777,22 @@ local Text = [[
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
-if text == 'تفعيل التنزيل' and Addictive(msg) then   
-database:del(bot_id..'dw:bot:api'..msg.chat_id_) 
-Text = '\n تم تفعيل التنزيلات' 
-send(msg.chat_id_, msg.id_,Text) 
+if text == 'تفعيل اليوتيوب' and Manager(msg) then  
+local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تفعيل اليوتيوب بنجاح'
+riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
+DevAbs:del(SNAP.."Abs:WhyTube"..msg.chat_id_) 
+return false  
 end
-if text == 'تعطيل التنزيل' and Owner(msg) then  
-database:set(bot_id..'dw:bot:api'..msg.chat_id_,true) 
-Text = '\nتم تعطيل التنزيلات' 
-send(msg.chat_id_, msg.id_,Text) 
+if text == 'تعطيل اليوتيوب' and Manager(msg) then  
+local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تعطيل اليوتيوب بنجاح'
+riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
+DevAbs:set(SNAP.."Abs:WhyTube"..msg.chat_id_,true) 
+return false  
 end 
-if text and text:match('^بحث (.*)$') and not database:get(bot_id..'dw:bot:api'..msg.chat_id_) then            
-local Ttext = text:match('^بحث (.*)$') 
-local msgin = msg.id_/2097152/0.5 
-http.request('http://78.141.220.60/Yahya.php?token='..token..'&chat_id='..msg.chat_id_..'&Text='..URL.escape(Ttext)..'&msg='..msgin)
+if text and text:match('^بحث (.*)$') and not DevRio:get(David.."Rio:WhyTube"..msg.chat_id_) then            
+local Text = text:match('^بحث (.*)$') 
+local msg_id = msg.id_/2097152/0.5 
+https.request('https://ccccxcc.ml/David/Api.php?Put=Search&TokenBot='..TokenBot..'&ChatId='..msg.chat_id_..'&UserId='..msg.sender_user_id_..'&Text='..URL.escape(Text)..'&MsgId='..msg_id..'&Name='..DirName)
 end
 --     Source SNAP     --
 if SecondSudo(msg) then
