@@ -10758,23 +10758,6 @@ local Text = [[
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
 --     Source SNAP     --
-if text == 'تفعيل اليوتيوب' and Manager(msg) then  
-local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n᥀︙تم تفعيل اليوتيوب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
-DevAbs:del(SNAP.."Abs:WhyTube"..msg.chat_id_) 
-return false  
-end
-if text == 'تعطيل اليوتيوب' and Manager(msg) then  
-local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n᥀︙تم تعطيل اليوتيوب بنجاح'
-Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
-DevAbs:set(SNAP.."Abs:WhyTube"..msg.chat_id_,true) 
-return false  
-end 
-if text and text:match('^بحث (.*)$') and not DevAbs:get(SNAP.."Abs:WhyTube"..msg.chat_id_) then            
-local Text = text:match('^بحث (.*)$') 
-local msg_id = msg.id_/2097152/0.5 
-https.request('https://ccccxcc.ml/SNAP/Api.php?Put=Search&TokenBot='..TokenBot..'&ChatId='..msg.chat_id_..'&UserId='..msg.sender_user_id_..'&Text='..URL.escape(Text)..'&MsgId='..msg_id..'&Name='..DirName)
---     Source SNAP     --
 if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⸙ ¦ جاري تحديث سورس سناب', 1, 'md') 
