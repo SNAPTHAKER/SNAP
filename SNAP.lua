@@ -10778,15 +10778,15 @@ local Text = [[
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
 if text == 'تفعيل اليوتيوب' and Manager(msg) then  
-local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تفعيل اليوتيوب بنجاح'
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
-DevAbs:del(SNAP.."Abs:WhyTube"..msg.chat_id_) 
+local SNAPTEAM = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تفعيل اليوتيوب بنجاح'
+riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:del(SNAP.."abs:WhyTube"..msg.chat_id_) 
 return false  
 end
 if text == 'تعطيل اليوتيوب' and Manager(msg) then  
-local SNAPTeam = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تعطيل اليوتيوب بنجاح'
-riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTeam, 14, string.len(msg.sender_user_id_))
-DevAbs:set(SNAP.."Abs:WhyTube"..msg.chat_id_,true) 
+local SNAPTEAM = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تعطيل اليوتيوب بنجاح'
+riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
+DevAbs:set(SNAP.."abs:WhyTube"..msg.chat_id_,true) 
 return false  
 end 
 if text and text:match('^بحث (.*)$') and not DevRio:get(David.."Rio:WhyTube"..msg.chat_id_) then            
