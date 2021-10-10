@@ -9242,7 +9242,7 @@ keyboard.inline_keyboard = {
 {{text = '᥀ SNAP Team .',url="t.me/iinzzz"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/GifSNAP/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/iinzzz/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text and (text == "ميمز" or text == "-› ميمز ᥀") and not DevAbs:get(SNAP..'Abs:memz:Abs'..msg.chat_id_) and SourceCh(msg) then
 Abs = math.random(2,1201); 
