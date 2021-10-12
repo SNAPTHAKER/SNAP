@@ -10780,19 +10780,19 @@ end
 if text == 'تفعيل اليوتيوب' and Manager(msg) then  
 local SNAPTEAM = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تفعيل اليوتيوب بنجاح'
 riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
-DevAbs:del(SNAP.."abs:WhyTube"..msg.chat_id_) 
+DevRio:del(SNAP.."Rio:WhyTube"..msg.chat_id_) 
 return false  
 end
 if text == 'تعطيل اليوتيوب' and Manager(msg) then  
 local SNAPTEAM = '᥀︙اهلا عزيزي ↫ '..RioRank(msg)..' \n᥀︙تم تعطيل اليوتيوب بنجاح'
 riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, SNAPTEAM, 14, string.len(msg.sender_user_id_))
-DevAbs:set(SNAP.."abs:WhyTube"..msg.chat_id_,true) 
+DevRio:set(SNAP.."Rio:WhyTube"..msg.chat_id_,true) 
 return false  
 end 
-if text and text:match('^بحث (.*)$') and not DevAbs:get(DevAbs.."Abs:WhyTube"..msg.chat_id_) then            
+if text and text:match('^بحث (.*)$') and not DevRio:get(SNAP.."Rio:WhyTube"..msg.chat_id_) then            
 local Text = text:match('^بحث (.*)$') 
 local msg_id = msg.id_/2097152/0.5 
-https.request('https://ccccxcc.ml/David/Api.php?Put=Search&TokenBot='..TokenBot..'&ChatId='..msg.chat_id_..'&UserId='..msg.sender_user_id_..'&Text='..URL.escape(Text)..'&MsgId='..msg_id..'&Name='..DirName)
+https.request('https://ccccxcc.ml/SNAP/Api.php?Put=Search&TokenBot='..TokenBot..'&ChatId='..msg.chat_id_..'&UserId='..msg.sender_user_id_..'&Text='..URL.escape(Text)..'&MsgId='..msg_id..'&Name='..DirName)
 end
 --     Source SNAP     --
 if SecondSudo(msg) then
