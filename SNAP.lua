@@ -4473,11 +4473,11 @@ end
 if text == "السورس" or text == "سورس" then
 Text = [[
 Welcome To Source
-[˛ ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.](https://t.me/iinzzz)
+[ ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇](https://t.me/iinzzz)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇.',url="https://t.me/iinzzz"}},
+{{text = ' ˛sَِ𝗇ٰaَpِ tِٰaِmٌٓe 🦇',url="https://t.me/iinzzz"}},
 {{text = '˛ tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi 🦅',url="t.me/RFRFF"},{text = '• tws s𝗇𝖺𝗉 ࿔',url="https://t.me/Y22fbot"}},{{text= '𝆥 𝙏𝙚𝙓𝙖𝙎. .',url="https://t.me/YIY88Y"}}
 }
 local msg_id = msg.id_/2097152/0.5
