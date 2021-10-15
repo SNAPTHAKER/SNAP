@@ -3566,7 +3566,7 @@ if not DevAbs:get(SNAP.."Abs:Lock:GpLinksinline"..msg.chat_id_) then
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAbs:get(SNAP.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Text = '⚘ ¦ 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
+local Text = '⚘ ¦ 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n━─━─━─ ₪ ─━─━─━\n['..ta.title_..']('..linkgpp.result..')'
 keyboard = {}  
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}}}
 local msg_id = msg.id_/2097152/0.5
@@ -4616,9 +4616,9 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source SNAP     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⚘ ¦ @cCVCcBoT', 1, 'md') end
-if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'⚘ ¦ اضغط للحصول على الرابط',nil,inline) return false end
-if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/cClCcBoT"}}} SendInline(msg.chat_id_,'⚘ ¦ اضغط للحصول على البوت',nil,inline) return false end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '⚘ ¦ @YNNfboT', 1, 'md') end
+if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://telegram.org/deactivate"}}} SendInline(msg.chat_id_,'⚘ ¦ اضغط للحصول على الرابط',nil,inline) return false end
+if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://telegram.org/deactivate"}}} SendInline(msg.chat_id_,'⚘ ¦ اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(SNAP..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ عدد جهاتك المضافه -› *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevAbs:get(SNAP..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ عدد تعديلاتك -› *❨ "..edit_msg.." ❩* ", 1, 'md') end
 if text == "ايديي" and ChCheck(msg) then Dev_Abs(msg.chat_id_, msg.id_, 1,'⚘ ¦ ايديك -› ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
