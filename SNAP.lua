@@ -528,53 +528,6 @@ function sendPhoto(chat_id, reply_to_message_id, disable_notification, from_back
 tdcli_function ({ ID = "SendMessage", chat_id_ = chat_id, reply_to_message_id_ = reply_to_message_id, disable_notification_ = disable_notification, from_background_ = from_background, reply_markup_ = reply_markup, input_message_content_ = { ID = "InputMessagePhoto", photo_ = getInputFile(photo), added_sticker_file_ids_ = {}, width_ = 0, height_ = 0, caption_ = caption }, }, dl_cb, nil)
 end
 --     Source SNAP     --
-function Dev_Abs(chat_id, reply_to_message_id, disable_notification, text, disable_web_page_preview, parse_mode)
-if text then 
-local TextParseMode = getParseMode(parse_mode)
-local text2 = text
-if parse_mode then
-if parse_mode == 'markdown' or parse_mode == 'md' then
-parse_mode = "Markdown"
-elseif parse_mode == 'html' then
-parse_mode = "Html"
-end
-end
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ 𝙨𝙣𝙖𝙥 𝙩𝙚𝙖𝙢 🦇',url="t.me/iinzzz"}}}
-local Abs = "https://api.telegram.org/bot" ..TokenBot.. '/sendMessage?chat_id=' .. chat_id
-if reply_to_message_id ~= 0 then
-Abs = Abs .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 
-end
-if disable_web_page_preview then
-Abs = Abs .. '&disable_web_page_preview=true'
-end
-if text then
-Abs = Abs..'&text='..URL.escape(text2)
-end
-if parse_mode then
-Abs = Abs .. '&parse_mode='..parse_mode
-end
-Abs = Abs..'&reply_markup='..JSON.encode(keyboard)
-return GetApi(Abs) 
-else
-tdcli_function ({
-ID = "SendMessage",
-chat_id_ = chat_id,
-reply_to_message_id_ = reply_to_message_id,
-disable_notification_ = disable_notification,
-from_background_ = 1,
-reply_markup_ = nil,
-input_message_content_ = {
-ID = "InputMessageText",
-text_ = text,
-disable_web_page_preview_ = disable_web_page_preview,
-clear_draft_ = 0,
-entities_ = {},
-parse_mode_ = TextParseMode,
-},}, dl_cb, nil)
-end
-end
---     Source SNAP     --
 function GetApi(web) 
 local info, res = https.request(web) 
 local req = json:decode(info) if res ~= 200 then 
