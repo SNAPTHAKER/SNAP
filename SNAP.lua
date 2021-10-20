@@ -549,12 +549,9 @@ if markdown == "md" or markdown == "markdown" then
 url = url.."&parse_mode=Markdown&disable_web_page_preview=true" 
 elseif markdown == "html" then 
 url = url.."&parse_mode=HTML" 
-end 
-keyboard = {}
-keyboard.inline_keyboard = {{{text = '˛ 𝙨𝙣𝙖𝙥 𝙩𝙚𝙖𝙢 🦇',url="t.me/iinzzz"}}}
-url = url..'&reply_markup='..JSON.encode(keyboard)
-return GetApi(url) 
 end
+return GetApi(url) 
+end 
 --     Source SNAP     --
 function SendInline(chat_id,text,keyboard,inline,reply_id) 
 local response = {} 
