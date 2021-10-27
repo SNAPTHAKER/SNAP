@@ -3369,9 +3369,9 @@ return false
 end
 --     Source LaUrEn     --
 if text == "الرابط" then
-if not DevAbs:get(LaUrEn.."Abs:Lock:GpLinksinline"..msg.chat_id_) then 
+if not DevAli:get(LaUrEn.."Ali:Lock:GpLinksinline"..msg.chat_id_) then 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAbs:get(LaUrEn.."Private:Group:Link"..msg.chat_id_) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevAli:get(LaUrEn.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
 local Text = '⚘ ¦ 𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n━─━─━─ ₪ ─━─━─━\n['..ta.title_..']('..linkgpp.result..')'
 keyboard = {}  
