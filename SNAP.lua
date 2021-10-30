@@ -4477,8 +4477,8 @@ Welcome To Source
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹',url="https://t.me/iinzzz"}},
-{{text = '˛ tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi 🦅',url="t.me/RFRFF"},{text = '• tws s𝗇𝖺𝗉 ࿔',url="https://t.me/Y22fbot"}},{{text= '𝆥 𝙏𝙚𝙓𝙖𝙎. .',url="https://t.me/YIY88Y"}}
+{{text = '  ٌ- 𝐒𝐍𝐀𝐏 𝐓𝐄𝐀𝐌 •',url="https://t.me/iinzzz"}},
+{{text = '- ٌ𝆥 tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi⤹ -',url="t.me/RFRFF"},{text = '• tws s𝗇𝖺𝗉 ࿔',url="https://t.me/Y22fbot"}},{{text= '𝆥 𝙏𝙚𝙓𝙖𝙎.',url="https://t.me/YIY88Y"}}
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
