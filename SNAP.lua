@@ -10151,13 +10151,12 @@ DevAbs:set(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SetGpRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ حسنا ارسل الكلمه الان " ,  1, "md")
 return false
 end
-if text and text:match("^(.*)$") then
-local SetGpRed = DevAbs:get(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
-if SetGpRed == 'SetGpRed' then
-end
 inlin = {
 {{text = '- اضغط هنا للالغاء.',callback_data=msg.sender_user_id_..":cancelRd:add"}},
 }
+Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ تم الغاء الامر" ,  1, "md")
+DevAbs:del(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
+return false
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ ارسل لي الرد سواء كان -› ↡\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⚘ ¦ يمكنك اضافة الى النص -› ↡\n━─━─━─ 𖣂 ─━─━─━\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n━─━─━─ 𖣂 ─━─━─━\n⚘ ¦ للخروج ارسل -› ( الغاء )\n ✓" ,  1, "md")
 DevAbs:set(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SaveGpRed')
