@@ -10154,6 +10154,7 @@ end
 if text and text:match("^(.*)$") then
 local SetGpRed = DevAbs:get(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
 if SetGpRed == 'SetGpRed' then
+end
 inlin = {
 {{text = '- اضغط هنا للالغاء.',callback_data=msg.sender_user_id_..":cancelRd:add"}},
 }
