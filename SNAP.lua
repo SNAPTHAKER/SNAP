@@ -10151,6 +10151,9 @@ DevAbs:set(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_,'SetGpRed')
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⚘ ¦ حسنا ارسل الكلمه الان " ,  1, "md")
 return false
 end
+if text and text:match("^(.*)$") then
+local SetGpRed = DevAbs:get(SNAP..'Abs:Add:GpRed'..msg.sender_user_id_..msg.chat_id_)
+if SetGpRed == 'SetGpRed' then
 inlin = {
 {{text = '- اضغط هنا للالغاء.',callback_data=msg.sender_user_id_..":cancelRd:add"}},
 }
