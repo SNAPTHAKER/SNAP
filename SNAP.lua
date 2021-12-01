@@ -3569,7 +3569,7 @@ if text == "الرابط" then
 if not DevRio:get(SNAP.."Rio:Lock:GpLinksinline"..msg.chat_id_) then 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 if DevRio:get(SNAP.."Rio:Groups:Links"..msg.chat_id_) then
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevRio:get(David.."Rio:Groups:Links"..msg.chat_id_)
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or DevRio:get(SNAP.."Rio:Groups:Links"..msg.chat_id_)
 if linkgpp.ok == true then 
 local Text = '᥀︙𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
 local inline = {{{text = ta.title_, url=linkgpp.result}}}
