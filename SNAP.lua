@@ -3566,24 +3566,21 @@ return false
 end
 --     Source SNAP     --
 if text == "الرابط" then
-if not Dev_Abs:get(SNAP.."Abs:Lock:GpLinksinline"..msg.chat_id_) then 
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-if Dev_Abs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_) then
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or Dev_Abs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_)
-if linkgpp.ok == true then 
-local Text = '᥀︙𝖫𝗂𝗇𝗄 𝖦𝗋𝗈𝗎𝗉 ↬ ⤈\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n['..ta.title_..']('..linkgpp.result..')'
-local inline = {{{text = ta.title_, url=linkgpp.result}}}
-SendInline(msg.chat_id_,Text,nil,inline,msg.id_/2097152/0.5)
-end 
+if not DevAbs:get(SNAP.."Abs:Lock:GpLinks"..msg.chat_id_) then 
+if DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_) then
+Dev_Abs(msg.chat_id_, msg.id_, 1, "℘ ¦ 𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 ↬ ⤈ \n━─━─━─ 𖣂 ─━─━─━\n"..DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
+else 
+Dev_Abs(msg.chat_id_, msg.id_, 1, '℘ ¦ لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
 end
-end,nil) 
+else
+Dev_Abs(msg.chat_id_, msg.id_, 1, '℘ ¦ جلب رابط المجموعه معطل', 1, 'md')
 end
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(SNAP..'Abs:NameBot') or 'سناب')
-local SNAPTEAM = {"؏ٛـمَݛيہِٰ اسمي  "..NameBot.." 😒🔪","؏ٛـمَݛيہِٰ وياك "..NameBot.." 💗👄","عندي اسم تره ??💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
+local SNAPTEAM = {"؏ٛـمَݛيہِٰ اسمي  "..NameBot.." 😒🔪","؏ٛـمَݛيہِٰ وياك🦅 "..NameBot.." 💗👄","عندي اسم تره ??💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
 Dev_Abs(msg.chat_id_, msg.id_, 1, SNAPTEAM[math.random(#SNAPTEAM)] , 1, 'html') 
 return false
 end
