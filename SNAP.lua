@@ -1767,7 +1767,7 @@ DevAbs:set(SNAP.."Set:Cmd:Group:New1"..msg.chat_id_..":غ","غنيلي")
 DevAbs:sadd(SNAP.."List:Cmd:Group:New"..msg.chat_id_,"غ")
 DevAbs:set(SNAP.."Set:Cmd:Group:New1"..msg.chat_id_..":#","مسح قائمه العام")
 DevAbs:sadd(SNAP.."List:Cmd:Group:New"..msg.chat_id_,"#")
-send(msg.chat_id_, msg.id_,"⌔︙تم ترتيب الاوامر بالشكل التالي ~\n⌔︙ايدي - ا .\n⌔︙رفع مميز - م .\n⌔︙رفع ادمن - اد .\n⌔︙رفع مدير - مد . \n⌔︙رفع منشى - من . \n⌔︙رفع منشئ الاساسي - اس  .\n⌔︙رفع مطور - مط .\n⌔︙رفع مطور ثانوي - ثانوي .\n⌔︙تنزيل الكل - تك .\n⌔︙تعطيل الايدي بالصوره - تعط .\n⌔︙تفعيل الايدي بالصوره - تفع .\n⌔︙الرابط - ر .\n⌔︙ردود المدير - رر .\n⌔︙مسح المكتومين - ،، .\n⌔︙اضف رد - رد .\n⌔︙مسح سحكاتي - سح .\n⌔︙مسح رسائلي - رس .\n⌔︙غنيلي - غ .\n⌔︙مسح قائمه العام - #")  
+send(msg.chat_id_, msg.id_,"℘ ¦ تم ترتيب الاوامر بالشكل التالي ~\n⌔︙ايدي - ا .\n⌔︙رفع مميز - م .\n℘ ¦ رفع ادمن - اد .\n⌔︙رفع مدير - مد . \n⌔︙رفع منشى - من . \n⌔︙رفع منشئ الاساسي - اس  .\n⌔︙رفع مطور - مط .\n℘ ¦ رفع مطور ثانوي - ثانوي .\n⌔︙تنزيل الكل - تك .\n⌔︙تعطيل الايدي بالصوره - تعط .\n⌔︙تفعيل الايدي بالصوره - تفع .\n⌔︙الرابط - ر .\n⌔︙ردود المدير - رر .\n⌔︙مسح المكتومين - ،، .\n⌔︙اضف رد - رد .\n⌔︙مسح سحكاتي - سح .\n⌔︙مسح رسائلي - رس .\n⌔︙غنيلي - غ .\n℘ ¦ مسح قائمه العام - #")  
 end
 if text == "اضف امر" or text == "اضافة امر" or text == "اضافه امر" and ChCheck(msg) then
 DevAbs:set(SNAP.."Set:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_,"true") 
@@ -3568,12 +3568,12 @@ end
 if text == "الرابط" then
 if not DevAbs:get(SNAP.."Abs:Lock:GpLinks"..msg.chat_id_) then 
 if DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, "⌔︙𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 ↬ ⤈ \n━─━─━─ 𖣂 ─━─━─━\n"..DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
+Dev_Abs(msg.chat_id_, msg.id_, 1, "℘ ¦ 𝒈𝒓𝒐𝒖𝒑 𝒍𝒊𝒏𝒌 ↬ ⤈ \n━─━─━─ 𖣂 ─━─━─━\n"..DevAbs:get(SNAP.."Abs:Groups:Links"..msg.chat_id_), 1, "html")
 else 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '℘ ¦ لايوجد رابط ارسل ↫ ضع رابط او ارسل ↫ انشاء رابط للانشاء', 1, 'md')
 end
 else
-Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙جلب رابط المجموعه معطل', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '℘ ¦ جلب رابط المجموعه معطل', 1, 'md')
 end
 end
 --     Source SNAP     --
@@ -4470,14 +4470,19 @@ DevAbs:set(SNAP..'Abs:viewget'..msg.sender_user_id_,true)
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌔︙حسنا قم باعادة توجيه للمنشور الذي تريدني حساب مشاهداته', 1, 'md')
 end
 --     Source SNAP     --
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then       
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ѕɴᴀᴘ\n\n[-  ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ  .](http://t.me/iinzzz)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/BBI9B)\n\n[-  ѕɴᴀᴘ ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/RFRFF)\n\n[-  ʙᴏᴛ ѕɴᴀᴘ .](http://t.me/Y22fbot)"
+if text == "السورس" or text == "سورس" then
+Text = [[
+Welcome To Source
+[  ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹](https://t.me/iinzzz)
+]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫: ѕɴᴀᴘ sᴏᴜʀᴄʀ .',url="t.me/iinzzz/19135"}},
+{{text = '  ٌ- 𝐒𝐍𝐀𝐏 𝐓𝐄𝐀𝐌 •',url="https://t.me/iinzzz"}},
+{{text = '- ٌ𝆥 tِuِoٰfٌe ٰaٌِlٰHٰaٌِlfٍi⤹ -',url="t.me/RFRFF"},{text = '• tws s𝗇𝖺𝗉 ࿔',url="https://t.me/Y22fbot"}},{{text= '𝆥 𝙏𝙚𝙓𝙖𝙎.',url="https://t.me/YIY88Y"}}
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/iinzzz&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
 end
 --     Source SNAP     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -5696,7 +5701,7 @@ inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"
 elseif Constructor(msg) then
 inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text="رفع منظف",callback_data=msg.sender_user_id_..":SetCleaner:"..result.sender_user_id_},{text="رفع مدير",callback_data=msg.sender_user_id_..":SetManager:"..result.sender_user_id_}},{{text = ' ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹',url="t.me/iinzzz"}}}
 elseif Manager(msg) then
-inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = ' ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹',url="t.me/iinzzz"}}}
+inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_},{text="رفع ادمن",callback_data=msg.sender_user_id_..":SetAdmin:"..result.sender_user_id_}},{{text = ' ٌ𝆥 ??𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹',url="t.me/iinzzz"}}}
 elseif Admin(msg) then
 inline = {{{text="رفع مميز",callback_data=msg.sender_user_id_..":SetMem:"..result.sender_user_id_}},{{text = ' ٌ𝆥 𝗦𝗡𝗮𝗣 𝗧𝗘𝗮𝗺 ⤹',url="t.me/iinzzz"}}}
 end
@@ -9241,7 +9246,7 @@ https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=
 end
 if text and (text == "ميمز" or text == "-› ميمز ᥀") and not DevAbs:get(SNAP..'Abs:memz:Abs'..msg.chat_id_) and SourceCh(msg) then
 Abs = math.random(2,1201); 
-local Text ='*⌔︙تم اختيار مقطع الميمز لك*'
+local Text ='*℘ ¦ تم اختيار مقطع الميمز لك*'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '᥀ SNAP Team .',url="t.me/zzzii"}},
@@ -10808,13 +10813,13 @@ local Text = [[
 Dev_Abs(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
 if text == 'تفعيل اليوتيوب' and Manager(msg) then  
-local DavidTeam = '⌔︙اهلا عزيزي ↫ '..RioRank(msg)..' \n⌔︙تم تفعيل اليوتيوب بنجاح'
+local DavidTeam = '℘ ¦ اهلا عزيزي ↫ '..RioRank(msg)..' \n℘ ¦ تم تفعيل اليوتيوب بنجاح'
 riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
 DevRio:del(SNAP.."Rio:WhyTube"..msg.chat_id_) 
 return false  
 end
 if text == 'تعطيل اليوتيوب' and Manager(msg) then  
-local DavidTeam = '⌔︙اهلا عزيزي ↫ '..RioRank(msg)..' \n⌔︙تم تعطيل اليوتيوب بنجاح'
+local DavidTeam = '℘ ¦ اهلا عزيزي ↫ '..RioRank(msg)..' \n℘ ¦ تم تعطيل اليوتيوب بنجاح'
 riomoned(msg.chat_id_, msg.sender_user_id_, msg.id_, DavidTeam, 14, string.len(msg.sender_user_id_))
 DevRio:set(SNAP.."Rio:WhyTube"..msg.chat_id_,true) 
 return false  
